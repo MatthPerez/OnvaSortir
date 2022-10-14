@@ -1,0 +1,26 @@
+{
+  "name": "matth/planning",
+
+  "autoload": {
+    "psr-4": {
+      "Matth\\Planning\\": "src/"
+    }
+  },
+  "scripts": {
+    "start": "php -S localhost:8000",
+    "add": "git add .",
+    "push": "git push git@github.com:MatthPerez/Planning.git",
+    "pull": "git pull origin master",
+    "log" : "git log",
+    "branchs" : "git branch",
+    "master" : "git checkout master",
+    "branch test" : "git checkout -b test"
+  },
+  "authors": [
+    {
+      "name": "Matthieu PEREZ",
+      "email": "contact@matthieuperez.fr"
+    }
+  ],
+  "require": {}
+}

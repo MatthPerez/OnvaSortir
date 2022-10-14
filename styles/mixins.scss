@@ -1,0 +1,20 @@
+@mixin react {
+  transition: 400ms all ease;
+  &:hover {
+    color: white;
+    background: linear-gradient(45deg,blue,#05055d);
+  }
+}
+
+@mixin boxshadowed {
+  box-shadow: 3px 1px 15px 0 grey;
+}
+
+@mixin bg-blur {
+  background-color: #ffffff99;
+  backdrop-filter: blur(8px);
+  transition: 600ms backdrop-filter ease;
+  &:hover {
+    backdrop-filter: blur(15px);
+  }
+}
