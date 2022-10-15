@@ -66,9 +66,6 @@
   }
 
   echo '
-  <span>' . $doorout . '</span>
-  <span>' . $list1 . '</span>' . $call .
-    '<span>' . $case . '</span>
   <span class="largeScreen normal">' . $weekday . ' ' . date("d") . ' ' . $month . ' ' . date("Y") . '</span>
   <span class="largeScreen" id="clock">
     <script src="' . $level . 'js/clock.js"></script>

@@ -6,32 +6,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
 @font-face {
   font-family: "RobotoMono";
-  src: url("../medias/fonts/RobotoMono-VariableFont_wght.ttf") format("opentype");
+  src: url("../médias/fonts/RobotoMono-VariableFont_wght.ttf") format("opentype");
 }
 
 @font-face {
   font-family: "Silkscreen";
-  src: url("../medias/fonts/Silkscreen-Regular.ttf") format("opentype");
+  src: url("../médias/fonts/Silkscreen-Regular.ttf") format("opentype");
 }
 
 @font-face {
   font-family: "AlarmClock";
-  src: url("../medias/fonts/alarm_clock.ttf") format("opentype");
+  src: url("../médias/fonts/alarm_clock.ttf") format("opentype");
 }
 
 @font-face {
   font-family: "AtomicClockRadio";
-  src: url("../medias/fonts/AtomicClockRadio.TTF") format("opentype");
+  src: url("../médias/fonts/AtomicClockRadio.TTF") format("opentype");
 }
 
 @font-face {
   font-family: "FlipClockBlack";
-  src: url("../medias/fonts/FLIPclockblack.ttf") format("opentype");
+  src: url("../médias/fonts/FLIPclockblack.ttf") format("opentype");
 }
 
 @font-face {
   font-family: "FlipClockWhite";
-  src: url("../medias/fonts/FLIPclockwhite.ttf") format("opentype");
+  src: url("../médias/fonts/FLIPclockwhite.ttf") format("opentype");
 }
 
 * {
@@ -508,55 +508,55 @@ html {
 }
 
 .bg-sono1 {
-  background-image: url(../medias/backgrounds/sono01.jpg);
+  background-image: url(../médias/backgrounds/sono01.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-sono2 {
-  background-image: url(../medias/backgrounds/sono02.jpg);
+  background-image: url(../médias/backgrounds/sono02.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-sono3 {
-  background-image: url(../medias/backgrounds/sono03.jpg);
+  background-image: url(../médias/backgrounds/sono03.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-sono4 {
-  background-image: url(../medias/backgrounds/sono04.jpg);
+  background-image: url(../médias/backgrounds/sono04.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-sono5 {
-  background-image: url(../medias/backgrounds/sono05.jpg);
+  background-image: url(../médias/backgrounds/sono05.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-sono6 {
-  background-image: url(../medias/backgrounds/sono06.jpg);
+  background-image: url(../médias/backgrounds/sono06.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-sono7 {
-  background-image: url(../medias/backgrounds/sono07.jpg);
+  background-image: url(../médias/backgrounds/sono07.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-sono8 {
-  background-image: url(../medias/backgrounds/sono08.jpg);
+  background-image: url(../médias/backgrounds/sono08.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-sono9 {
-  background-image: url(../medias/backgrounds/sono09.jpg);
+  background-image: url(../médias/backgrounds/sono09.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1652,73 +1652,73 @@ html {
 }
 
 .bg-desk1 {
-  background-image: url(../medias/backgrounds/desk01.jpg);
+  background-image: url(../médias/backgrounds/desk01.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-dark1 {
-  background-image: url(../medias/backgrounds/dark01.jpg);
+  background-image: url(../médias/backgrounds/dark01.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-desk2 {
-  background-image: url(../medias/backgrounds/desk02.jpg);
+  background-image: url(../médias/backgrounds/desk02.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-dark2 {
-  background-image: url(../medias/backgrounds/dark02.jpg);
+  background-image: url(../médias/backgrounds/dark02.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-desk3 {
-  background-image: url(../medias/backgrounds/desk03.jpg);
+  background-image: url(../médias/backgrounds/desk03.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-dark3 {
-  background-image: url(../medias/backgrounds/dark03.jpg);
+  background-image: url(../médias/backgrounds/dark03.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-desk4 {
-  background-image: url(../medias/backgrounds/desk04.jpg);
+  background-image: url(../médias/backgrounds/desk04.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-dark4 {
-  background-image: url(../medias/backgrounds/dark04.jpg);
+  background-image: url(../médias/backgrounds/dark04.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-desk5 {
-  background-image: url(../medias/backgrounds/desk05.jpg);
+  background-image: url(../médias/backgrounds/desk05.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-dark5 {
-  background-image: url(../medias/backgrounds/dark05.jpg);
+  background-image: url(../médias/backgrounds/dark05.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-desk6 {
-  background-image: url(../medias/backgrounds/desk06.jpg);
+  background-image: url(../médias/backgrounds/desk06.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-dark6 {
-  background-image: url(../medias/backgrounds/dark06.jpg);
+  background-image: url(../médias/backgrounds/dark06.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -58591,7 +58591,7 @@ html {
   min-height: 50vh;
   margin-left: 20%;
   padding: 1em;
-  background-image: url(../medias/pictures/blank_board0.png);
+  background-image: url(../médias/pictures/blank_board0.png);
   border: 15px groove #f3d9bd;
   border-radius: 10px;
   color: white;
@@ -58644,7 +58644,7 @@ html {
   min-height: 84vh;
   padding: 1em;
   margin: 1em 0 3em 5%;
-  background-image: url(../medias/pictures/blank_board0.png);
+  background-image: url(../médias/pictures/blank_board0.png);
   background-size: cover;
   border: 20px groove #503710;
   border-radius: 10px;
@@ -58665,14 +58665,13 @@ html {
   list-style: none;
 }
 
-.roll {
-  width: 40vw;
-  height: 2.5em;
+aside {
+  z-index: 5;
+  position: fixed;
+  right: 0;
+  top: 4em;
+  width: 2.5em;
   overflow: hidden;
-  margin: 0 0 1em 30vw;
-  background-color: #f0e7dd;
-  border-radius: 10px;
-  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58680,119 +58679,127 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  -webkit-transition: 400ms all ease-out;
-  transition: 400ms all ease-out;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 15px;
+  background-color: #413f3f;
+  color: white;
+  border-radius: 10px 0 0 10px;
+  -webkit-transition: 700ms all ease;
+  transition: 700ms all ease;
 }
 
-.roll:hover {
-  -webkit-transition: 100ms all ease;
-  transition: 100ms all ease;
-  background-color: #f4dac0;
-  height: 11em;
+aside:hover {
+  -webkit-transition: 200ms all ease;
+  transition: 200ms all ease;
+  width: 17em;
+  background-color: black;
 }
 
-@media screen and (max-width: 768px) {
-  .roll {
-    height: 3.5em;
+aside div {
+  padding: 10px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+aside div span:nth-child(1) {
+  margin-right: 20px;
+}
+
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  right: 3em;
+  bottom: 3em;
+  gap: 1em;
+}
+
+@media screen and (max-width: 68px) {
+  .aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .roll:hover {
-    -webkit-transition: 100ms all ease;
-    transition: 100ms all ease;
-    background-color: #f4dac0;
-    height: 11em;
-    overflow: auto;
-  }
 }
 
-.roll span:nth-child(1) {
-  font-weight: bold;
-  margin-bottom: 1em;
+.aside section {
+  border-radius: 10px;
+  height: 90vh;
+  font-size: 0.9rem;
 }
 
-.roll span:nth-child(1):before {
-  content: "Réunion du ";
+.aside section:nth-child(1) {
+  background-color: #ffffffc4;
+  border: 1px solid black;
+  padding: 1em;
+  width: 20vw;
+  bottom: 4em;
 }
 
-.roll span:nth-child(2):before {
-  content: "Scène : ";
+.aside section:nth-child(2) {
+  width: 75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
 }
 
-.roll span:nth-child(3):before {
-  content: "Perches : ";
-}
-
-.roll span:nth-child(4):before {
-  content: "Audio : ";
-}
-
-.roll span:nth-child(5):before {
-  content: "Vidéo : ";
-}
-
-.roll span:nth-child(6):before {
-  content: "Zoom : ";
-}
-
-.roll span:nth-child(7):before {
-  content: "Accueil : ";
-}
-
-.services {
-  width: 50%;
-  margin-left: 25%;
-  color: black;
-  border: 1px solid white;
+.aside section:nth-child(2) div {
+  background-color: #ffffffc4;
+  font-size: 0.9rem;
+  border: 1px solid black;
   border-radius: 10px;
   padding: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .services {
-    width: 80%;
-    margin-left: 10%;
-  }
+.aside section:nth-child(2) div:nth-child(1) {
+  height: 70%;
 }
 
-.services span:nth-child(1) {
-  font-weight: bold;
-  margin-bottom: 1em;
+.aside section:nth-child(2) div:nth-child(2) {
+  height: 30%;
 }
 
-.services span:nth-child(1):before {
-  content: "Réunion du ";
+.aside input,
+.aside button {
+  padding: 10px;
 }
 
-.services span:nth-child(2):before {
-  content: "Scène : ";
+.aside button {
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 6px #565656;
+          box-shadow: 0 2px 6px #565656;
+  -webkit-transition: 400ms all ease;
+  transition: 400ms all ease;
 }
 
-.services span:nth-child(3):before {
-  content: "Perches : ";
-}
-
-.services span:nth-child(4):before {
-  content: "Audio : ";
-}
-
-.services span:nth-child(5):before {
-  content: "Vidéo : ";
-}
-
-.services span:nth-child(6):before {
-  content: "Zoom : ";
-}
-
-.services span:nth-child(7):before {
-  content: "Accueil : ";
+.aside button:hover {
+  -webkit-transition: 100ms all ease;
+  transition: 100ms all ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 .inNum {
@@ -58808,6 +58815,29 @@ html {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1rem;
+}
+
+.noteList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: 600ms all ease;
+  transition: 600ms all ease;
+}
+
+.noteList:hover {
+  -webkit-transition: 100ms all ease;
+  transition: 100ms all ease;
+  background-color: #fdfdb6;
 }
 
 .central-small {
@@ -58989,7 +59019,7 @@ html {
 }
 
 .sword {
-  cursor: url(../medias/cursors/sword.png), auto;
+  cursor: url(../médias/cursors/sword.png), auto;
 }
 
 .top-shadow {
@@ -59513,7 +59543,7 @@ html {
 }
 
 .bg-sky {
-  background-image: url(../medias/backgrounds/sky01.jpg);
+  background-image: url(../médias/backgrounds/sky01.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -59540,85 +59570,13 @@ html {
 }
 
 .bg-carpet {
-  background-image: url(../medias/backgrounds/goldencarpet.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-jw1 {
-  background-image: url(../medias/backgrounds/jw1.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-jw2 {
-  background-image: url(../medias/backgrounds/jw2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-jw3 {
-  background-image: url(../medias/backgrounds/jw3.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-jw4 {
-  background-image: url(../medias/backgrounds/jw4.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-jw5 {
-  background-image: url(../medias/backgrounds/jw5.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-jw6 {
-  background-image: url(../medias/backgrounds/jw6.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-jw7 {
-  background-image: url(../medias/backgrounds/jw7.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-jw8 {
-  background-image: url(../medias/backgrounds/jw8.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-jw9 {
-  background-image: url(../medias/backgrounds/jw9.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-jw10 {
-  background-image: url(../medias/backgrounds/jw10.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-jw11 {
-  background-image: url(../medias/backgrounds/jw11.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bg-admin {
-  background-image: url(../medias/backgrounds/dark03.jpg);
+  background-image: url(../médias/backgrounds/goldencarpet.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-bible {
-  background-image: url(../medias/backgrounds/bible02.jpg);
+  background-image: url(../médias/backgrounds/bible02.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -59664,36 +59622,36 @@ html {
 }
 
 .bg-predic1 {
-  background-image: url(../medias/backgrounds/predic01.jpg);
+  background-image: url(../médias/backgrounds/predic01.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 @media screen and (max-width: 768px) {
   .bg-predic1 {
-    background-image: url(../medias/backgrounds/lonely_house02.jpg);
+    background-image: url(../médias/backgrounds/lonely_house02.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
 }
 
 .bg-tribal {
-  background-image: url(../medias/backgrounds/tribal.png);
+  background-image: url(../médias/backgrounds/tribal.png);
   background-size: cover;
 }
 
 .bg-plank1 {
-  background-image: url(../medias/backgrounds/planks1.webp);
+  background-image: url(../médias/backgrounds/planks1.webp);
   background-size: cover;
 }
 
 .bg-plank2 {
-  background-image: url(../medias/backgrounds/planks2.jpg);
+  background-image: url(../médias/backgrounds/planks2.jpg);
   background-size: cover;
 }
 
 .bg-pred {
-  background-image: url(../medias/backgrounds/nature02.jpg);
+  background-image: url(../médias/backgrounds/nature02.jpg);
   background-size: cover;
 }
 
@@ -59811,7 +59769,7 @@ html {
 }
 
 .bg-desk {
-  background-image: url(../medias/backgrounds/bibliotheque03.jpg);
+  background-image: url(../médias/backgrounds/bibliotheque03.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -59872,14 +59830,14 @@ html {
   width: 100%;
   height: 100vh;
   padding: 1em 0;
-  background-image: url(../medias/backgrounds/predic01.jpg);
+  background-image: url(../médias/backgrounds/predic01.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 @media screen and (max-width: 768px) {
   .pred_title {
-    background-image: url(../medias/backgrounds/lonely_house02.jpg);
+    background-image: url(../médias/backgrounds/lonely_house02.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
@@ -60463,23 +60421,23 @@ nav div {
 }
 
 .plank1 {
-  background-image: url(../medias/backgrounds/planks1.webp);
+  background-image: url(../médias/backgrounds/planks1.webp);
 }
 
 .board0 {
-  background-image: url(../medias/pictures/blank_board0.png);
+  background-image: url(../médias/pictures/blank_board0.png);
 }
 
 .board1 {
-  background-image: url(../medias/pictures/blank_board1.png);
+  background-image: url(../médias/pictures/blank_board1.png);
 }
 
 .board2 {
-  background-image: url(../medias/pictures/blank_board2.webp);
+  background-image: url(../médias/pictures/blank_board2.webp);
 }
 
 .board3 {
-  background-image: url(../medias/pictures/blank_board3.png);
+  background-image: url(../médias/pictures/blank_board3.png);
 }
 
 .vcm h2 {
@@ -61040,7 +60998,7 @@ h3 {
   font-weight: 1000;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: url(../medias/backgrounds/ParisByNight.jpg);
+  background-image: url(../médias/backgrounds/ParisByNight.jpg);
   color: transparent;
   -webkit-transition: background-position 500ms ease-out;
   transition: background-position 500ms ease-out;

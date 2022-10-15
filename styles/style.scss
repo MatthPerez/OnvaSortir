@@ -9,27 +9,27 @@ $hubbali: "Hubballi", cursive;
 $quicksand: "Quicksand", sans-serif;
 @font-face {
   font-family: "RobotoMono";
-  src: url("../medias/fonts/RobotoMono-VariableFont_wght.ttf") format("opentype");
+  src: url("../médias/fonts/RobotoMono-VariableFont_wght.ttf") format("opentype");
 }
 @font-face {
   font-family: "Silkscreen";
-  src: url("../medias/fonts/Silkscreen-Regular.ttf") format("opentype");
+  src: url("../médias/fonts/Silkscreen-Regular.ttf") format("opentype");
 }
 @font-face {
   font-family: "AlarmClock";
-  src: url("../medias/fonts/alarm_clock.ttf") format("opentype");
+  src: url("../médias/fonts/alarm_clock.ttf") format("opentype");
 }
 @font-face {
   font-family: "AtomicClockRadio";
-  src: url("../medias/fonts/AtomicClockRadio.TTF") format("opentype");
+  src: url("../médias/fonts/AtomicClockRadio.TTF") format("opentype");
 }
 @font-face {
   font-family: "FlipClockBlack";
-  src: url("../medias/fonts/FLIPclockblack.ttf") format("opentype");
+  src: url("../médias/fonts/FLIPclockblack.ttf") format("opentype");
 }
 @font-face {
   font-family: "FlipClockWhite";
-  src: url("../medias/fonts/FLIPclockwhite.ttf") format("opentype");
+  src: url("../médias/fonts/FLIPclockwhite.ttf") format("opentype");
 }
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
 $Rubik_Moonrocks: "Rubik Moonrocks', cursive";
@@ -294,7 +294,7 @@ $purple7: #e0c4e0;
 
 @for $i from 1 through 9 {
   .bg-sono#{$i} {
-    background-image: url(../medias/backgrounds/sono0#{$i}.jpg);
+    background-image: url(../médias/backgrounds/sono0#{$i}.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
@@ -388,12 +388,12 @@ $purple7: #e0c4e0;
 
 @for $i from 1 through 6 {
   .bg-desk#{$i} {
-    background-image: url(../medias/backgrounds/desk0#{$i}.jpg);
+    background-image: url(../médias/backgrounds/desk0#{$i}.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
   .bg-dark#{$i} {
-    background-image: url(../medias/backgrounds/dark0#{$i}.jpg);
+    background-image: url(../médias/backgrounds/dark0#{$i}.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
@@ -894,7 +894,7 @@ $purple7: #e0c4e0;
   margin-left: 20%;
   // text-align: justify;
   padding: 1em;
-  background-image: url(../medias/pictures/blank_board0.png);
+  background-image: url(../médias/pictures/blank_board0.png);
   border: 15px groove #f3d9bd;
   border-radius: 10px;
   color: white;
@@ -944,7 +944,7 @@ $purple7: #e0c4e0;
   }
   padding: 1em;
   margin: 1em 0 3em 5%;
-  background-image: url(../medias/pictures/blank_board0.png);
+  background-image: url(../médias/pictures/blank_board0.png);
   background-size: cover;
   border: 20px groove #503710;
   border-radius: 10px;
@@ -959,120 +959,100 @@ $purple7: #e0c4e0;
   list-style: none;
 }
 
-.roll {
-  width: 40vw;
-  height: 2.5em;
+aside {
+  z-index: 5;
+  position: fixed;
+  right: 0;
+  top: 4em;
+  width: 2.5em;
   overflow: hidden;
-  margin: 0 0 1em 30vw;
-  background-color: $orange7;
-  border-radius: 10px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  transition: 400ms all ease-out;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: #413f3f;
+  color: white;
+  border-radius: 10px 0 0 10px;
+  // text-align: center;
+  transition: 700ms all ease;
   &:hover {
-    transition: 100ms all ease;
-    background-color: $orange6;
-    height: 11em;
+    transition: 200ms all ease;
+    width: 17em;
+    background-color: black;
   }
-  @media screen and (max-width: 768px) {
-    height: 3.5em;
-    &:hover {
-      transition: 100ms all ease;
-      background-color: $orange6;
-      height: 11em;
-      overflow: auto;
-    }
-  }
-  span:nth-child(1) {
-    font-weight: bold;
-    margin-bottom: 1em;
-    &:before {
-      content: "Réunion du ";
-    }
-  }
-  span:nth-child(2) {
-    &:before {
-      content: "Scène : ";
-    }
-  }
-  span:nth-child(3) {
-    &:before {
-      content: "Perches : ";
-    }
-  }
-  span:nth-child(4) {
-    &:before {
-      content: "Audio : ";
-    }
-  }
-  span:nth-child(5) {
-    &:before {
-      content: "Vidéo : ";
-    }
-  }
-  span:nth-child(6) {
-    &:before {
-      content: "Zoom : ";
-    }
-  }
-  span:nth-child(7) {
-    &:before {
-      content: "Accueil : ";
+  div {
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    span {
+      &:nth-child(1) {
+        margin-right: 20px;
+      }
     }
   }
 }
 
-.services {
-  width: 50%;
-  margin-left: 25%;
-  color: black;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 1em;
+.aside {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  @media screen and (max-width: 768px) {
-    width: 80%;
-    margin-left: 10%;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  right: 3em;
+  bottom: 3em;
+  gap: 1em;
+  @media screen and (max-width: 68px) {
+    flex-direction: column;
   }
-  span:nth-child(1) {
-    font-weight: bold;
-    margin-bottom: 1em;
-    &:before {
-      content: "Réunion du ";
+  section {
+    border-radius: 10px;
+    height: 90vh;
+    font-size: 0.9rem;
+    &:nth-child(1) {
+      background-color: #ffffffc4;
+      border: 1px solid black;
+      padding: 1em;
+      // color: red;
+      width: 20vw;
+      bottom: 4em;
+    }
+    &:nth-child(2) {
+      width: 75vw;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      div {
+        background-color: #ffffffc4;
+        font-size: 0.9rem;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 1em;
+        &:nth-child(1) {
+          // color: green;
+          height: 70%;
+        }
+        &:nth-child(2) {
+          // color: blue;
+          height: 30%;
+        }
+      }
     }
   }
-  span:nth-child(2) {
-    &:before {
-      content: "Scène : ";
-    }
+  input,
+  button {
+    padding: 10px;
   }
-  span:nth-child(3) {
-    &:before {
-      content: "Perches : ";
-    }
-  }
-  span:nth-child(4) {
-    &:before {
-      content: "Audio : ";
-    }
-  }
-  span:nth-child(5) {
-    &:before {
-      content: "Vidéo : ";
-    }
-  }
-  span:nth-child(6) {
-    &:before {
-      content: "Zoom : ";
-    }
-  }
-  span:nth-child(7) {
-    &:before {
-      content: "Accueil : ";
+  button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px #565656;
+    transition: 400ms all ease;
+    &:hover {
+      transition: 100ms all ease;
+      box-shadow: none;
+      transform: translateY(2px);
     }
   }
 }
@@ -1089,6 +1069,20 @@ $purple7: #e0c4e0;
   text-align: center;
   margin-bottom: 20px;
   font-size: 1rem;
+}
+
+.noteList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 600ms all ease;
+  &:hover {
+    transition: 100ms all ease;
+    background-color: #fdfdb6;
+  }
 }
 
 .central-small {
@@ -1212,7 +1206,7 @@ $purple7: #e0c4e0;
   background-color: green;
 }
 .sword {
-  cursor: url(../medias/cursors/sword.png), auto;
+  cursor: url(../médias/cursors/sword.png), auto;
 }
 .top-shadow {
   background: linear-gradient(black, rgba(0, 0, 0, 0));
@@ -1459,7 +1453,7 @@ $purple7: #e0c4e0;
 }
 
 .bg-sky {
-  background-image: url(../medias/backgrounds/sky01.jpg);
+  background-image: url(../médias/backgrounds/sky01.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1483,27 +1477,13 @@ $purple7: #e0c4e0;
 }
 
 .bg-carpet {
-  background-image: url(../medias/backgrounds/goldencarpet.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-@for $i from 1 to 12 {
-  .bg-jw#{$i} {
-    background-image: url(../medias/backgrounds/jw#{$i}.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-  }
-}
-
-.bg-admin {
-  background-image: url(../medias/backgrounds/dark03.jpg);
+  background-image: url(../médias/backgrounds/goldencarpet.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-bible {
-  background-image: url(../medias/backgrounds/bible02.jpg);
+  background-image: url(../médias/backgrounds/bible02.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1541,33 +1521,33 @@ $purple7: #e0c4e0;
 }
 
 .bg-predic1 {
-  background-image: url(../medias/backgrounds/predic01.jpg);
+  background-image: url(../médias/backgrounds/predic01.jpg);
   background-size: cover;
   background-attachment: fixed;
   @media screen and (max-width: 768px) {
-    background-image: url(../medias/backgrounds/lonely_house02.jpg);
+    background-image: url(../médias/backgrounds/lonely_house02.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
 }
 
 .bg-tribal {
-  background-image: url(../medias/backgrounds/tribal.png);
+  background-image: url(../médias/backgrounds/tribal.png);
   background-size: cover;
 }
 
 .bg-plank1 {
-  background-image: url(../medias/backgrounds/planks1.webp);
+  background-image: url(../médias/backgrounds/planks1.webp);
   background-size: cover;
 }
 
 .bg-plank2 {
-  background-image: url(../medias/backgrounds/planks2.jpg);
+  background-image: url(../médias/backgrounds/planks2.jpg);
   background-size: cover;
 }
 
 .bg-pred {
-  background-image: url(../medias/backgrounds/nature02.jpg);
+  background-image: url(../médias/backgrounds/nature02.jpg);
   background-size: cover;
 }
 
@@ -1646,7 +1626,7 @@ $purple7: #e0c4e0;
   background-color: #00000000;
 }
 .bg-desk {
-  background-image: url(../medias/backgrounds/bibliotheque03.jpg);
+  background-image: url(../médias/backgrounds/bibliotheque03.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1691,11 +1671,11 @@ $purple7: #e0c4e0;
   width: 100%;
   height: 100vh;
   padding: 1em 0;
-  background-image: url(../medias/backgrounds/predic01.jpg);
+  background-image: url(../médias/backgrounds/predic01.jpg);
   background-size: cover;
   background-attachment: fixed;
   @media screen and (max-width: 768px) {
-    background-image: url(../medias/backgrounds/lonely_house02.jpg);
+    background-image: url(../médias/backgrounds/lonely_house02.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
@@ -2094,23 +2074,23 @@ nav {
 }
 
 .plank1 {
-  background-image: url(../medias/backgrounds/planks1.webp);
+  background-image: url(../médias/backgrounds/planks1.webp);
 }
 
 .board0 {
-  background-image: url(../medias/pictures/blank_board0.png);
+  background-image: url(../médias/pictures/blank_board0.png);
 }
 
 .board1 {
-  background-image: url(../medias/pictures/blank_board1.png);
+  background-image: url(../médias/pictures/blank_board1.png);
 }
 
 .board2 {
-  background-image: url(../medias/pictures/blank_board2.webp);
+  background-image: url(../médias/pictures/blank_board2.webp);
 }
 
 .board3 {
-  background-image: url(../medias/pictures/blank_board3.png);
+  background-image: url(../médias/pictures/blank_board3.png);
 }
 
 .vcm {
@@ -2515,7 +2495,7 @@ h3 {
   font-weight: 1000;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: url(../medias/backgrounds/ParisByNight.jpg);
+  background-image: url(../médias/backgrounds/ParisByNight.jpg);
   color: transparent;
   transition: background-position 500ms ease-out;
   cursor: pointer;

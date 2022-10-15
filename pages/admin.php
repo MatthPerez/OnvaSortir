@@ -3,15 +3,11 @@ session_start();
 
 if (
   isset($_SESSION['username']) and
-  isset($_SESSION['password']) and
-  isset($_SESSION['status']) and
-  !empty($_SESSION['username']) and
-  !empty($_SESSION['password']) and
-  !empty($_SESSION['status'])
+  !empty($_SESSION['username'])
 ) {
-  $username = $_POST['username'];
-  $password = $_POST['password'];
-  $status = $_POST['status'];
+  $username = $_SESSION['username'];
+  $password = $_SESSION['password'];
+  $status = $_SESSION['status'];
 } else {
   unset(
     $username,
@@ -21,7 +17,7 @@ if (
 }
 
 require '../back/classes/Page.php';
-$page_admin = new Page('../', '', 'styles/style.css', 'Planning', '', '', '', '', '');
+$page_admin = new Page('../', 'dark_mode', 'styles/style.css', 'Planning', '', '', '', '', '');
 
 $level = $page_admin->getLevel();
 $style = $page_admin->getStyle();
@@ -37,8 +33,32 @@ require_once $level . 'back/head.php';
 // require_once $level . 'back/nav.php';
 require_once $level . 'back/icons.php';
 require_once $level . 'back/addConnection.php';
+
 require_once '../back/' . $status . '.php';
-$mode = 'dark_mode';
+
+$link1 = '';
+$link2 = '';
+$link3 = '';
+$link4 = '';
+$link5 = '';
+$linkName1 = 'Planning des missions';
+$linkName2 = 'Liste des clients';
+$linkName3 = 'Liste des salariés';
+$linkName4 = 'Congés';
+$linkName5 = 'Comptabilité';
+?>
+
+<aside>
+  <div><span><?= $clock ?></span><a href="<?= $link1 ?>"><?= $linkName1 ?></a></div>
+  <div><span><?= $persons ?></span><a href="<?= $link2 ?>"><?= $linkName2 ?></a></div>
+  <div><span><?= $list1 ?></span><a href="<?= $link3 ?>"><?= $linkName3 ?></a></div>
+  <div><span><?= $coffee ?></span><a href="<?= $link4 ?>"><?= $linkName4 ?></a></div>
+  <div><span><?= $piggyBank ?></span><a href="<?= $link5 ?>"><?= $linkName5 ?></a></div>
+</aside>
+
+<?php
+
+$mode = $page_admin->getMode();
 require_once $level . 'back/footer.php';
 ?>
 

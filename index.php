@@ -9,9 +9,9 @@ if (
   !empty($_SESSION['password']) and
   !empty($_SESSION['status'])
 ) {
-  $username = $_POST['username'];
-  $password = $_POST['password'];
-  $status = $_POST['status'];
+  $username = $_SESSION['username'];
+  $password = $_SESSION['password'];
+  $status = $_SESSION['status'];
 } else {
   unset(
     $username,
@@ -20,7 +20,7 @@ if (
   );
 }
 
-require 'back/classes/Page.php';
+require_once 'back/classes/Page.php';
 $page_index = new Page('', '', 'styles/style.css', 'Planning', '', '', '', '', '');
 
 $level = $page_index->getLevel();
@@ -32,9 +32,7 @@ $active4 = $page_index->getActive4();
 $title = $page_index->getTitle();
 $seo = $page_index->getSeo();
 
-$appear = 8;
 require_once $level . 'back/head.php';
-// require_once $level . 'back/nav.php';
 require_once $level . 'back/icons.php';
 require_once $level . 'back/addConnection.php';
 ?>
@@ -42,11 +40,9 @@ require_once $level . 'back/addConnection.php';
 <body class="bg-dark">
   <?php
   if (
-    isset($_SESSION['username']) or
-    isset($_POST['username'])
+    !isset($username) or
+    $username = NULL
   ) {
-    header('Location: pages/admin.php');
-  } else {
     header('Location: pages/connectionForm.php');
   }
   ?>

@@ -1,5 +1,6 @@
 <?php
-require '../back/classes/Page.php';
+require_once '../back/logout.php';
+require_once '../back/classes/Page.php';
 $page_connection = new Page('../', '', 'styles/style.css', 'Connexion', '', '', '', '', '');
 
 $level = $page_connection->getLevel();
@@ -11,10 +12,7 @@ $active4 = $page_connection->getActive4();
 $title = $page_connection->getTitle();
 $seo = $page_connection->getSeo();
 
-$appear = 8;
-$level = $page_connection->getLevel();
 require_once $level . 'back/head.php';
-// require_once $level . 'back/nav.php';
 require_once $level . 'back/icons.php';
 require_once $level . 'back/addConnection.php';
 ?>
@@ -25,12 +23,26 @@ require_once $level . 'back/addConnection.php';
 
     <div>
       <label for="username">Nom d'utilisateur</label>
-      <input type="text" name="username" id="username" value="<?= $_SERVER['REMOTE_ADDR'] ?>">
+      <?php
+      if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
+        require_once '../back/pass.php';
+        foreach ($users as $user) {
+          if ($user['username'] == 'Dév') {
+            $user0 = 'Dév';
+            $pass0 = $user['password'];
+          }
+        }
+      } else {
+        $user0 = $_SERVER['REMOTE_ADDR'];
+        $pass0 = 'xxxxx';
+      }
+      ?>
+      <input type="text" name="username" id="username" value="<?= $user0 ?>">
     </div>
 
     <div>
       <label for="password">Mot de passe</label>
-      <input type="password" name="password" id="password">
+      <input type="password" name="password" id="password" value="<?= $pass0 ?>">
     </div>
 
     <button type="submit">Entrer</button>
