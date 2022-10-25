@@ -141,3 +141,17 @@
     width: 55vw;
   }
 }
+
+@mixin slideLeft {
+  animation: 2s slideLeft ease;
+}
+@mixin slideRight {
+  animation: 2s slideRight ease;
+}
+@mixin slideUp {
+  animation: 2s slideUp ease;
+}
+@mixin slideDown {
+  animation: 2s slideDown ease;
+}
+

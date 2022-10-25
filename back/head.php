@@ -11,13 +11,13 @@ ini_set('display_errors', 'off');
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta property="og:title" content="Mas de Ville">
-  <meta property="og:site_name" content="Assemblée de Nîmes Mas de Ville">
+  <meta property="og:title" content="OnVaSortir">
+  <meta property="og:site_name" content="On va sortir dans ma région">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?= $seo ?>">
 
-  <link rel="icon" href="<?= $level . 'médias/icons/favicon2.png' ?>">
+  <link rel="icon" href="<?= $level . 'médias/icons/walk0.png' ?>">
 
   <link rel="stylesheet" href="<?php echo $level ?>styles/style.css">
   <link rel="stylesheet" href="<?php echo $level ?>styles/parts.css">
@@ -33,6 +33,7 @@ ini_set('display_errors', 'off');
   }
   ?>
   <script src="<?php echo $level ?>js/menu.js" defer></script>
+  <script src="<?php echo $level ?>js/functions.js" defer></script>
   <?php
   if (isset($script2)) {
     echo '<script src="' . $level . 'js/' . $script2 . '.js" defer></script>

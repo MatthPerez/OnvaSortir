@@ -9,3 +9,5 @@ if (isset($_GET['test'])) {
     header('Location: ../index.php');
   }
 }
+
+session_abort();

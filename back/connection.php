@@ -15,7 +15,6 @@ if (
     ) {
       $_SESSION['username'] = $username;
       $_SESSION['password'] = $password;
-      $_SESSION['status'] = $user['status'];
       header('Location: ../pages/admin.php');
       exit;
     }

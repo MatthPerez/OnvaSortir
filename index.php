@@ -21,31 +21,19 @@ if (
 }
 
 require_once 'back/classes/Page.php';
-$page_index = new Page('', '', 'styles/style.css', 'Planning', '', '', '', '', '');
+$page_index = new Page('', '', 'styles/style.css', 'Les sorties dans le coin', '');
 
 $level = $page_index->getLevel();
 $style = $page_index->getStyle();
-$active1 = $page_index->getActive1();
-$active2 = $page_index->getActive2();
-$active3 = $page_index->getActive3();
-$active4 = $page_index->getActive4();
 $title = $page_index->getTitle();
 $seo = $page_index->getSeo();
 
 require_once $level . 'back/head.php';
 require_once $level . 'back/icons.php';
-require_once $level . 'back/addConnection.php';
 ?>
 
-<body class="bg-dark">
-  <?php
-  if (
-    !isset($username) or
-    $username = NULL
-  ) {
-    header('Location: pages/connectionForm.php');
-  }
-  ?>
+<body class="bg-hiking2">
+  <?php require_once $level . 'back/connectionForm.php' ?>
 </body>
 
 <?php

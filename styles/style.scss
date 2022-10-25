@@ -1,5 +1,4 @@
 @import "mixins.scss";
-$roboto: "Roboto", cursive, sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 $montserrat: "Montserrat", sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
@@ -8,33 +7,107 @@ $comfortaa: "Comfortaa", cursive;
 $hubbali: "Hubballi", cursive;
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 $quicksand: "Quicksand", sans-serif;
+
+@font-face {
+  font-family: "Neutra";
+  src: url("../médias/fonts/Neutra_Text_Light_SC.otf") format("otf");
+}
+@font-face {
+  font-family: "alarm_clock";
+  src: url("../médias/fonts/alarm_clock.ttf") format("truetype");
+}
+@font-face {
+  font-family: "atomicClockRadio";
+  src: url("../médias/fonts/AtomicClockRadio.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ethnocentric_rg";
+  src: url("../médias/fonts/ethnocentric_rg.ttf") format("truetype");
+}
 @font-face {
   font-family: "RobotoMono";
-  src: url("../médias/fonts/RobotoMono-VariableFont_wght.ttf") format("opentype");
+  src: url("../médias/fonts/RobotoMono.ttf") format("truetype");
 }
 @font-face {
   font-family: "Silkscreen";
-  src: url("../médias/fonts/Silkscreen-Regular.ttf") format("opentype");
+  src: url("../médias/fonts/Silkscreen.ttf") format("truetype");
 }
 @font-face {
-  font-family: "AlarmClock";
-  src: url("../médias/fonts/alarm_clock.ttf") format("opentype");
+  font-family: "HelveticaNeue";
+  src: url("../médias/fonts/HelveticaNeueLight.ttf") format("truetype");
 }
 @font-face {
-  font-family: "AtomicClockRadio";
-  src: url("../médias/fonts/AtomicClockRadio.TTF") format("opentype");
+  font-family: "Aneisha";
+  src: url("../médias/fonts/Aneisha.otf") format("otf");
 }
 @font-face {
-  font-family: "FlipClockBlack";
-  src: url("../médias/fonts/FLIPclockblack.ttf") format("opentype");
+  font-family: "ComicLetters";
+  src: url("../médias/fonts/ComicLetters.ttf") format("truetype");
 }
 @font-face {
-  font-family: "FlipClockWhite";
-  src: url("../médias/fonts/FLIPclockwhite.ttf") format("opentype");
+  font-family: "Trend";
+  src: url("../médias/fonts/HashtagTrendDemoRegular.ttf") format("truetype");
 }
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
-$Rubik_Moonrocks: "Rubik Moonrocks', cursive";
-
+@font-face {
+  font-family: "House";
+  src: url("../médias/fonts/House_Minimalist.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Remachine";
+  src: url("../médias/fonts/RemachineScript_Personal_Use.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SuperImagination";
+  src: url("../médias/fonts/SuperImaginationDemoRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Island";
+  src: url("../médias/fonts/IslandMoments-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../médias/fonts/Quicksand.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ralewayt";
+  src: url("../médias/fonts/Ralewayt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FuzzyBubbles";
+  src: url("../médias/fonts/FuzzyBubbles.ttf") format("truetype");
+}
+@font-face {
+  font-family: "federalescort";
+  src: url("../médias/fonts/federalescort.ttf") format("truetype");
+}
+@font-face {
+  font-family: "federalescort3d";
+  src: url("../médias/fonts/federalescort3d.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FredokaOne";
+  src: url("../médias/fonts/FredokaOne-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LuckiestGuy";
+  src: url("../médias/fonts/LuckiestGuy.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Propagan";
+  src: url("../médias/fonts/Propagan.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TheLastCall";
+  src: url("../médias/fonts/TheLastCall.ttf") format("truetype");
+}
+@font-face {
+  font-family: "VanillaExtract";
+  src: url("../médias/fonts/VanillaExtract.ttf") format("truetype");
+}
+@font-face {
+  font-family: "VinegarStroke";
+  src: url("../médias/fonts/VinegarStroke.ttf") format("truetype");
+}
 .comfortaa {
   font-family: $comfortaa;
 }
@@ -46,9 +119,26 @@ $Rubik_Moonrocks: "Rubik Moonrocks', cursive";
   font-family: $quicksand;
   letter-spacing: 2px;
 }
-.Rubik_Moonrocks {
-  font-family: $Rubik_Moonrocks;
-  letter-spacing: 4px;
+.Neutra {
+  font-family: "Neutra", cursive;
+}
+.alarm_clock {
+  font-family: "alarm_clock", cursive;
+}
+.atomicClockRadio {
+  font-family: "atomicClockRadio", cursive;
+}
+.ethnocentric_rg {
+  font-family: "ethnocentric_rg", cursive;
+}
+.RobotoMono {
+  font-family: "RobotoMono", cursive;
+}
+.Silkscreen {
+  font-family: "Silkscreen", cursive;
+}
+.HelveticaNeue {
+  font-family: "HelveticaNeue", cursive;
 }
 
 * {
@@ -296,6 +386,11 @@ $purple7: #e0c4e0;
   }
   .bg-dark#{$i} {
     background-image: url(../médias/backgrounds/dark0#{$i}.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .bg-hiking#{$i} {
+    background-image: url(../médias/backgrounds/rando0#{$i}.jpg);
     background-size: cover;
     background-attachment: fixed;
   }
@@ -672,7 +767,6 @@ $purple7: #e0c4e0;
   }
 }
 
-// ici
 .sticky-bottom {
   position: sticky;
   bottom: 0;
@@ -749,6 +843,97 @@ $purple7: #e0c4e0;
   @media screen and (max-width: 1000px) {
     display: none;
   }
+}
+
+.homeTitle {
+  // background-color: red;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    $orange:#f7b843;
+    @include slideDown;
+    margin: 0 1em;
+    font-size: 4rem;
+    // ici
+    font-family: 'Propagan';
+    color: $orange;
+    text-shadow: 2px 3px 5px black;
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+
+.home {
+  @include bg-blur;
+  // background-color: greenyellow;
+  border-radius: 10px;
+  position: fixed;
+  right: 40px;
+  bottom: 80px;
+
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+
+  label {
+    font-weight: bold;
+  }
+
+  input {
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    transition: 700ms all ease;
+    box-shadow: 0 2px 2px black;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: 'House';
+    &:hover {
+      transition: 100ms all ease;
+      transform: translateY(2px);
+      box-shadow: none;
+    }
+    &:focus {
+      background-color: #9dec9d;
+    }
+  }
+}
+
+.slideUp {
+  @include slideUp;
+}
+.slideDown {
+  @include slideDown;
+}
+.slideLeft {
+  @include slideLeft;
+}
+.slideRight {
+  @include slideRight;
 }
 
 footer {

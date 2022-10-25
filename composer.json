@@ -1,26 +1,17 @@
 {
-  "name": "matth/onvasortir",
-
-  "autoload": {
-    "psr-4": {
-      "Matth\\Planning\\": "src/"
-    }
-  },
   "scripts": {
-    "start": "php -S localhost:8000",
+    "add0": "git remote add origin git@github.com:MatthPerez/OnvaSortir.git",
     "add": "git add *",
     "push": "git push git@github.com:MatthPerez/OnvaSortir.git",
-    "pull": "git pull origin master",
-    "log" : "git log",
-    "branchs" : "git branch",
-    "master" : "git checkout master",
-    "branch test" : "git checkout -b test"
+    "pull": "git pull origin main",
+    "force": "git push --force git@github.com:MatthPerez/OnvaSortir.git",
+    "start": "composer server:start",
+    "stop": "composer server:stop",
+    "sass": "node-sass styles/lists.scss styles/lists.css --watch",
+    "rebuild": "npm rebuild node-sass"
   },
-  "authors": [
-    {
-      "name": "Matthieu PEREZ",
-      "email": "contact@matthieuperez.fr"
-    }
-  ],
-  "require": {}
+  "require": {
+    "vonage/client": "^3.0",
+    "phpmailer/phpmailer": "^6.6"
+  }
 }

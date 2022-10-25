@@ -7,62 +7,59 @@ if (
 ) {
   $username = $_SESSION['username'];
   $password = $_SESSION['password'];
-  $status = $_SESSION['status'];
 } else {
   unset(
     $username,
-    $password,
-    $status
+    $password
   );
 }
 
 require '../back/classes/Page.php';
-$page_admin = new Page('../', 'dark_mode', 'styles/style.css', 'Planning', '', '', '', '', '');
+$page_admin = new Page('../', 'dark_mode', '', 'styles/style.css', 'Admin', '');
 
 $level = $page_admin->getLevel();
+$mode = $page_admin->getMode();
 $style = $page_admin->getStyle();
-$active1 = $page_admin->getActive1();
-$active2 = $page_admin->getActive2();
-$active3 = $page_admin->getActive3();
-$active4 = $page_admin->getActive4();
 $title = $page_admin->getTitle();
 $seo = $page_admin->getSeo();
 
-$level = $page_admin->getLevel();
 require_once $level . 'back/head.php';
-// require_once $level . 'back/nav.php';
 require_once $level . 'back/icons.php';
-require_once $level . 'back/addConnection.php';
-
-require_once '../back/' . $status . '.php';
-
-$link1 = $level . '';
-$link2 = $level . '';
-$link3 = $level . '';
-$link4 = $level . '';
-$link5 = $level . '';
-$link6 = $level . 'back/logout.php?test=0';
-$linkName1 = 'Planning des missions';
-$linkName2 = 'Liste des clients';
-$linkName3 = 'Liste des salariés';
-$linkName4 = 'Congés';
-$linkName5 = 'Comptabilité';
-$linkName6 = 'Déconnexion';
+require_once $level . 'back/aside.php';
 ?>
 
-<aside>
-  <div><span><?= $clock ?></span><a href="<?= $link1 ?>"><?= $linkName1 ?></a></div>
-  <div><span><?= $persons ?></span><a href="<?= $link2 ?>"><?= $linkName2 ?></a></div>
-  <div><span><?= $list1 ?></span><a href="<?= $link3 ?>"><?= $linkName3 ?></a></div>
-  <div><span><?= $coffee ?></span><a href="<?= $link4 ?>"><?= $linkName4 ?></a></div>
-  <div><span><?= $piggyBank ?></span><a href="<?= $link5 ?>"><?= $linkName5 ?></a></div>
-  <div><span><?= $logout ?></span><a href="<?= $link6 ?>"><?= $linkName6 ?></a></div>
-</aside>
+<body class="bg-dark1">
+  <div class="aside">
+    <section>
+      <h1 class="centered jc-c">
+        <span>Bienvenue</span>
+        <span class="f-blue"><?= $_SESSION['username'] ?></span>
+      </h1>
 
-<?php
+      <div>
+        Calendrier
+      </div>
+      
+      <div>
+        Organisateurs du mois
+      </div>
 
-$mode = $page_admin->getMode();
-require_once $level . 'back/footer.php';
-?>
+      <div>
+        Bienvenues
+      </div>
+
+      <div></div>
+      <div></div>
+    </section>
+
+    <section>
+      <div></div>
+      <div></div>
+    </section>
+
+  </div>
+</body>
+
+<?php require_once $level . 'back/footer.php' ?>
 
 </html>

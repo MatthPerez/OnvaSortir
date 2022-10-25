@@ -7,6 +7,15 @@
   bottom: 3em;
   gap: 1em;
 
+  section:first-child {
+    h1 {
+      margin: 1em 0;
+    }
+    div {
+      margin-bottom: 2em;
+    }
+  }
+  
   section {
     h3 {
       text-align: center;
@@ -156,15 +165,15 @@ aside {
 }
 
 .form1 {
-  background-color: #e0e0e0;
+  // background-color: #e0e0e0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 4em;
-  margin: 5vw;
+  margin: 10vw 0 0 35vw;
   padding: 3em;
-  width: 90vw;
+  width: 50vw;
   text-align: center;
   h2 {
     font-size: 2rem;

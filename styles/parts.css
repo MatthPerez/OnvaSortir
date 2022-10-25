@@ -10,6 +10,14 @@
   gap: 1em;
 }
 
+.aside section:first-child h1 {
+  margin: 1em 0;
+}
+
+.aside section:first-child div {
+  margin-bottom: 2em;
+}
+
 .aside section {
   border-radius: 10px;
   height: 90vh;
@@ -201,7 +209,6 @@ aside a:hover {
 }
 
 .form1 {
-  background-color: #e0e0e0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,9 +223,9 @@ aside a:hover {
       -ms-flex-align: center;
           align-items: center;
   gap: 4em;
-  margin: 5vw;
+  margin: 10vw 0 0 35vw;
   padding: 3em;
-  width: 90vw;
+  width: 50vw;
   text-align: center;
 }
 
