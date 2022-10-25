@@ -36,16 +36,18 @@ require_once $level . 'back/addConnection.php';
 
 require_once '../back/' . $status . '.php';
 
-$link1 = '';
-$link2 = '';
-$link3 = '';
-$link4 = '';
-$link5 = '';
+$link1 = $level . '';
+$link2 = $level . '';
+$link3 = $level . '';
+$link4 = $level . '';
+$link5 = $level . '';
+$link6 = $level . 'back/logout.php?test=0';
 $linkName1 = 'Planning des missions';
 $linkName2 = 'Liste des clients';
 $linkName3 = 'Liste des salariés';
 $linkName4 = 'Congés';
 $linkName5 = 'Comptabilité';
+$linkName6 = 'Déconnexion';
 ?>
 
 <aside>
@@ -54,6 +56,7 @@ $linkName5 = 'Comptabilité';
   <div><span><?= $list1 ?></span><a href="<?= $link3 ?>"><?= $linkName3 ?></a></div>
   <div><span><?= $coffee ?></span><a href="<?= $link4 ?>"><?= $linkName4 ?></a></div>
   <div><span><?= $piggyBank ?></span><a href="<?= $link5 ?>"><?= $linkName5 ?></a></div>
+  <div><span><?= $logout ?></span><a href="<?= $link6 ?>"><?= $linkName6 ?></a></div>
 </aside>
 
 <?php

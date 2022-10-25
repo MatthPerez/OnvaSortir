@@ -1,5 +1,5 @@
 {
-  "name": "matth/planning",
+  "name": "matth/OnVaSortir",
 
   "autoload": {
     "psr-4": {
@@ -9,7 +9,7 @@
   "scripts": {
     "start": "php -S localhost:8000",
     "add": "git add .",
-    "push": "git push git@github.com:MatthPerez/Planning.git",
+    "push": "git push git@github.com:MatthPerez/OnvaSortir.git",
     "pull": "git pull origin master",
     "log" : "git log",
     "branchs" : "git branch",

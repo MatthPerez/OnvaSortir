@@ -20,6 +20,7 @@ ini_set('display_errors', 'off');
   <link rel="icon" href="<?= $level . 'médias/icons/favicon2.png' ?>">
 
   <link rel="stylesheet" href="<?php echo $level ?>styles/style.css">
+  <link rel="stylesheet" href="<?php echo $level ?>styles/parts.css">
   <link rel="stylesheet" href="<?php echo $level ?>styles/menu.css">
   <?php
   if (isset($style2)) {

@@ -66,8 +66,8 @@
   }
 
   echo '
-  <span class="largeScreen normal">' . $weekday . ' ' . date("d") . ' ' . $month . ' ' . date("Y") . '</span>
-  <span class="largeScreen" id="clock">
+  <span class="normal">' . $weekday . ' ' . date("d") . ' ' . $month . ' ' . date("Y") . '</span>
+  <span id="clock">
     <script src="' . $level . 'js/clock.js"></script>
   </span>
   ';

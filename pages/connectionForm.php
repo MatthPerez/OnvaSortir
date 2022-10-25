@@ -18,9 +18,9 @@ require_once $level . 'back/addConnection.php';
 ?>
 
 <form action="../back/connection.php" method="POST" class="form1">
-  <fieldset>
-    <h2>Connexion</h2>
+  <h2>Connexion</h2>
 
+  <section>
     <div>
       <label for="username">Nom d'utilisateur</label>
       <?php
@@ -44,7 +44,7 @@ require_once $level . 'back/addConnection.php';
       <label for="password">Mot de passe</label>
       <input type="password" name="password" id="password" value="<?= $pass0 ?>">
     </div>
+  </section>
 
-    <button type="submit">Entrer</button>
-  </fieldset>
+  <button type="submit">Entrer</button>
 </form>
