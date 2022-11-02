@@ -257,6 +257,10 @@
   color: #a1a0a0;
 }
 
+.f-light-grey {
+  color: #c7c7c7;
+}
+
 .f-cyan {
   color: cyan;
 }
@@ -58470,6 +58474,16 @@
   bottom: 0;
 }
 
+@media screen and (max-width: 700px) {
+  .fixed-bottom {
+    display: none;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .btn0 {
   padding: 1em 2em;
   color: #220e5a;
@@ -58744,7 +58758,7 @@
           animation: 2s slideDown ease;
   margin: 0 1em;
   font-size: 4rem;
-  font-family: 'Propagan';
+  font-family: "Propagan";
   color: #f7b843;
   text-shadow: 2px 3px 5px black;
 }
@@ -58812,7 +58826,7 @@
           box-shadow: 0 2px 2px black;
   font-weight: bold;
   font-size: 1.4rem;
-  font-family: 'House';
+  font-family: "House";
 }
 
 .home button:hover {
@@ -58826,6 +58840,17 @@
 
 .home button:focus {
   background-color: #9dec9d;
+}
+
+@media screen and (min-width: 341px) {
+  .XSscreen {
+    display: none;
+  }
+}
+
+#auto-jsCalendar {
+  width: 100%;
+  height: 50%;
 }
 
 .slideUp {
@@ -58856,6 +58881,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5px;
+  caret-color: transparent;
 }
 
 #clock {

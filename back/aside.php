@@ -1,6 +1,6 @@
 <?php
 
-$link1 = $level . 'pages/groups.php';
+$link1 = $level . 'pages/admin.php';
 $link2 = $level . 'pages/#';
 $link3 = $level . 'pages/#';
 $link4 = $level . 'pages/#';

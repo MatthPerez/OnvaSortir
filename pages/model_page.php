@@ -15,7 +15,7 @@ if (
 }
 
 require '../back/classes/Page.php';
-$page_model = new Page('../', 'dark_mode', '', 'styles/style.css', 'Model', '');
+$page_model = new Page('../', 'dark_mode', 'styles/style.css', 'Model', '');
 
 $level = $page_model->getLevel();
 $mode = $page_model->getMode();

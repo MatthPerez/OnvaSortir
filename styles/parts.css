@@ -8,6 +8,13 @@
   right: 3em;
   bottom: 3em;
   gap: 1em;
+  caret-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .aside section:first-child {
+    overflow-y: scroll;
+  }
 }
 
 .aside section:first-child h1 {
@@ -31,7 +38,6 @@
 
 .aside section:nth-child(1) {
   background-color: #ffffffc4;
-  border: 1px solid black;
   padding: 1em;
   width: 20vw;
   bottom: 4em;
@@ -52,7 +58,6 @@
 .aside section:nth-child(2) div {
   background-color: #ffffffc4;
   font-size: 0.9rem;
-  border: 1px solid black;
   border-radius: 10px;
   padding: 1em;
   height: 70%;
@@ -64,6 +69,56 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1em;
+}
+
+.aside section:nth-child(2) div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.aside section:nth-child(2) div:nth-child(1) span {
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .aside section:nth-child(2) div:nth-child(1) span {
+    width: 100%;
+  }
+}
+
+.aside section:nth-child(2) div:nth-child(1) span:nth-child(2) {
+  padding: 10px;
+}
+
+.aside section:nth-child(2) div:nth-child(1) span:nth-child(2) h2 {
+  background-color: #ffffffa7;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .aside section:nth-child(2) div:nth-child(1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.aside section:nth-child(2) div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .aside section:nth-child(2) select {
@@ -94,7 +149,7 @@
           transform: translateY(2px);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 701px) and (max-width: 1000px) {
   .aside {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -116,8 +171,56 @@
             flex-direction: row;
   }
   .aside section:nth-child(2) div {
-    width: 50%;
     height: 68vh;
+  }
+  .aside section:nth-child(2) div:nth-child(1) {
+    width: 40%;
+  }
+  .aside section:nth-child(2) div:nth-child(2) {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .aside {
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aside section:nth-child(1) {
+    width: 90%;
+    max-height: 20vh;
+    overflow-y: scroll;
+  }
+  .aside section:nth-child(2) {
+    width: 90%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1em;
+  }
+  .aside section:nth-child(2) div {
+    width: 100%;
+  }
+  .aside section:nth-child(2) div table {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .aside section:nth-child(2) div:nth-child(2) {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .aside table {
+    display: none;
   }
 }
 
@@ -273,5 +376,110 @@ aside a:hover {
 .form1 button:focus {
   -webkit-box-shadow: 14px 14px 29px #fdfdfd, -14px -14px 29px #c3c3c3;
           box-shadow: 14px 14px 29px #fdfdfd, -14px -14px 29px #c3c3c3;
+}
+
+.calendarTable {
+  border-collapse: collapse;
+  border-radius: 10px;
+  background-color: #ffffffaf;
+}
+
+.calendarTable td {
+  width: 7%;
+}
+
+.calendarTable thead {
+  text-align: center;
+  margin: 0;
+  height: 25px;
+}
+
+.calendarTable thead tr:nth-child(1) {
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.calendarTable thead tr:nth-child(2) {
+  height: 25px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-bottom: 1px solid black;
+}
+
+.calendarTable tbody tr,
+.calendarTable tbody td {
+  text-align: center;
+  margin: 0;
+  height: 25px;
+}
+
+.calendarTable tbody td {
+  border-radius: 10px;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+
+.calendarTable tbody td:hover {
+  background-color: #f5d496;
+  -webkit-transition: 100ms all ease;
+  transition: 100ms all ease;
+}
+
+#previousMonth,
+#nextMonth {
+  cursor: pointer;
+}
+
+.events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.events table {
+  overflow-y: scroll;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+@media screen and (max-width: 1000px) {
+  .events table {
+    width: 100%;
+  }
+}
+
+.events table td {
+  text-align: center;
+  padding: 5px;
+}
+
+.events table td:nth-child(2) {
+  text-align: left;
+}
+
+.events table tr {
+  -webkit-transition: 400ms all ease;
+  transition: 400ms all ease;
+}
+
+.events table tr:nth-child(odd) {
+  background-color: white;
+}
+
+.events table tr:nth-child(even) {
+  background-color: #ffffff6c;
+}
+
+.events table tr:hover {
+  -webkit-transition: 100ms all ease;
+  transition: 100ms all ease;
+  background-color: #ffda8a;
 }
 /*# sourceMappingURL=parts.css.map */
