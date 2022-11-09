@@ -32,7 +32,6 @@ ini_set('display_errors', 'off');
 ';
   }
   ?>
-  <script src="<?php echo $level ?>js/menu.js" defer></script>
   <script src="<?php echo $level ?>js/functions.js" defer></script>
   <?php
   if (isset($script2)) {

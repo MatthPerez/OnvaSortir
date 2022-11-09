@@ -21,7 +21,7 @@ if (
 }
 
 require_once 'back/classes/Page.php';
-$page_index = new Page('', '', 'styles/style.css', 'Les sorties dans le coin', '');
+$page_index = new Page('', '', 'styles/style.css', 'J\'ai trouvé ici', '');
 
 $level = $page_index->getLevel();
 $style = $page_index->getStyle();
@@ -32,8 +32,16 @@ require_once $level . 'back/head.php';
 require_once $level . 'back/icons.php';
 ?>
 
-<body class="bg-hiking2">
-  <?php require_once $level . 'back/connectionForm.php' ?>
+<!-- <body class="bg-hiking2"> -->
+<?php
+if (date('H') < 18) {
+  echo '<body class="bg-montainJour">';
+} else {
+  echo '<body class="bg-montainNuit">';
+}
+require_once $level . 'back/connectionForm.php';
+require_once $level . 'js/cookies.html';
+?>
 </body>
 
 <?php

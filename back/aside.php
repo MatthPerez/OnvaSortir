@@ -1,13 +1,13 @@
 <?php
 
 $link1 = $level . 'pages/admin.php';
-$link2 = $level . 'pages/#';
-$link3 = $level . 'pages/#';
-$link4 = $level . 'pages/#';
-$link5 = $level . 'pages/#';
+$link2 = $level . 'pages/members.php';
+$link3 = $level . 'pages/groups.php';
+$link4 = $level . 'pages/perso.php';
+$link5 = $level . 'pages/premium.php';
 $link6 = $level . 'back/logout.php?test=0';
 
-$linkName1 = 'Les sorties';
+$linkName1 = 'Calendrier';
 $linkName2 = 'Les membres';
 $linkName3 = 'Les groupes';
 $linkName4 = 'Espace perso';

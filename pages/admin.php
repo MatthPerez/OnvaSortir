@@ -15,13 +15,15 @@ if (
 }
 
 require '../back/classes/Page.php';
-$page_admin = new Page('../', 'dark_mode', 'styles/style.css', 'Admin', '');
+$page_admin = new Page('../', 'dark_mode', 'styles/style.css', 'Calendrier', '');
 
 $level = $page_admin->getLevel();
 $mode = $page_admin->getMode();
 $style = $page_admin->getStyle();
 $title = $page_admin->getTitle();
 $seo = $page_admin->getSeo();
+
+$style2 = $level . 'styles/disposition.css';
 
 require_once $level . 'back/head.php';
 require_once $level . 'back/icons.php';
@@ -33,25 +35,11 @@ require_once $level . 'back/aside.php';
   <div class="aside">
     <section>
       <h1 class="centered jc-c">
-        <span>Bienvenue</span>
+        <span>Bonjour</span>
         <span class="f-blue"><?= $_SESSION['username'] ?></span>
       </h1>
 
-      <div>
-        Organisateurs du mois
-      </div>
-
-      <div>
-        Bienvenues
-      </div>
-
-      <div>
-        Paragraphe
-      </div>
-
-      <div>
-        Paragraphe
-      </div>
+      <?php require_once $level . 'back/paragraphs.php' ?>
     </section>
 
     <section>
@@ -61,12 +49,12 @@ require_once $level . 'back/aside.php';
           <h2>Bienvenue à nos nouveaux membres</h2>
           <ul class="centered">
             <?php
-            require_once $level . 'back/lists/members.php';
+            require $level . 'back/lists/members.php';
             foreach ($members as $member) {
               echo '
               <li>
                 <span class="bold">' . $member['nom'] . '</span>
-                <span><a href="https://www.google.com/maps?q=' . $member['adresse'] . '" target="_blank">(' . $member['adresse'] . ')</a></span>
+                <span><a href="https://www.google.com/maps?q=' . $member['ville'] . '" target="_blank">(' . $member['ville'] . ')</a></span>
               </li>';
             }
             ?>
@@ -75,7 +63,7 @@ require_once $level . 'back/aside.php';
       </div>
 
       <div>
-        <h2 class="f12decrem centered">Dimanche 20 <?= $longMonth ?> <?= $year ?></h2>
+        <h2 id="currentDate" class="f12decrem centered"><?= date('d M Y') ?></h2>
         <?php require_once $level . 'back/events.php' ?>
         <p class="centered XSscreen">
           <span>Malheureusement,</span>

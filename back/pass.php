@@ -11,7 +11,7 @@ $users = [
 
   [
     'id' => 2,
-    'username' => 'personne1',
+    'username' => 'Carl',
     'password' => 'ghff?9761',
     'status' => 'manager',
   ],

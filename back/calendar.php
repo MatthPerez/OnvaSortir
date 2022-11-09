@@ -46,9 +46,9 @@
 
   <thead>
     <tr>
-      <td colspan="2" id="previousMonth">◀</td>
+      <td colspan="2" id="previousMonth"><img src="../médias/icons/bold-left.png" alt="left" class="w12px"></td>
       <td colspan="3" id="currentMonth"><?= $longMonth . ' ' . $year ?></td>
-      <td colspan="2" id="nextMonth">▶️</td>
+      <td colspan="2" id="nextMonth"><img src="../médias/icons/bold-right.png" alt="right" class="w12px"></td>
     </tr>
     <tr>
       <td>L</td>
@@ -102,7 +102,11 @@
         $thisLongDay = date('d/m/Y', mktime(0, 0, 0, $month0, $day0 + $b + (7 * $a), $year0));
 
         if (date('m', mktime(0, 0, 0, $month0, $day0 + $b + (7 * $a), $year0)) == $month) {
-          echo '<td title="' . $thisLongDay . '">' . $thisDay . '</td>';
+          if (date('d/m/Y') == $thisLongDay) {
+            echo '<td id="' . $thisLongDay . '" title="' . $thisLongDay . '" class="f-red bold">' . $thisDay . '</td>';
+          } else {
+            echo '<td id="' . $thisLongDay . '" title="' . $thisLongDay . '">' . $thisDay . '</td>';
+          }
         } else {
           echo '<td class="f-light-grey">' . $thisDay . '</td>';
         }

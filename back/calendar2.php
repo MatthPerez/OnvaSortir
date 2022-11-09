@@ -1,0 +1,1 @@
+<iframe src="http://winky.fr/winky_widget_calendar/?wid=0" style="width: 300px; height: 200px; border: none;"></iframe>

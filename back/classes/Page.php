@@ -8,8 +8,13 @@ class Page
   private string $title;
   private string $seo;
 
-  public function __construct(string $level, string $mode, string $style, string $title, string $seo)
-  {
+  public function __construct(
+    string $level,
+    string $mode,
+    string $style,
+    string $title,
+    string $seo
+  ) {
     $this->level = $level;
     $this->mode = $mode;
     $this->style = $style;
@@ -25,7 +30,6 @@ class Page
   public function setLevel($level)
   {
     $this->level = $level;
-
     return $this;
   }
 
@@ -37,7 +41,6 @@ class Page
   public function setMode($mode)
   {
     $this->mode = $mode;
-
     return $this;
   }
 
@@ -49,7 +52,6 @@ class Page
   public function setStyle($style)
   {
     $this->style = $style;
-
     return $this;
   }
 
@@ -61,7 +63,6 @@ class Page
   public function setTitle($title)
   {
     $this->title = $title;
-
     return $this;
   }
 
@@ -78,7 +79,6 @@ class Page
   public function setSeo($seo)
   {
     $this->seo = $seo;
-
     return $this;
   }
 }
