@@ -14,6 +14,17 @@ if (
   );
 }
 
+if (isset($_GET['month'])) {
+  if (
+    !is_numeric($_GET['month']) or
+    $_GET['month'] > 12
+  ) {
+    header('Location: admin.php?month=' . date('m') . '&year=' . date('Y'));
+  }
+} else {
+  header('Location: admin.php?month=' . date('m') . '&year=' . date('Y'));
+}
+
 require '../back/classes/Page.php';
 $page_admin = new Page('../', 'dark_mode', 'styles/style.css', 'Calendrier', '');
 
@@ -24,6 +35,7 @@ $title = $page_admin->getTitle();
 $seo = $page_admin->getSeo();
 
 $style2 = $level . 'styles/disposition.css';
+// $script2 = 'calendarDay';
 
 require_once $level . 'back/head.php';
 require_once $level . 'back/icons.php';
@@ -44,7 +56,11 @@ require_once $level . 'back/aside.php';
 
     <section>
       <div>
-        <span><?php require_once $level . 'back/calendar.php' ?></span>
+        <span>
+          <?php
+          require_once $level . 'back/calendar3.php';
+          ?>
+        </span>
         <span>
           <h2>Bienvenue à nos nouveaux membres</h2>
           <ul class="centered">
@@ -63,8 +79,45 @@ require_once $level . 'back/aside.php';
       </div>
 
       <div>
-        <h2 id="currentDate" class="f12decrem centered"><?= date('d M Y') ?></h2>
+        <h2 id="currentDate" title="<?= date('d/m/Y') ?>" class="f12decrem centered">
+
+          <?php
+          switch (date('w')) {
+            case 1:
+              $wd = 'Lundi';
+              break;
+
+            case 2:
+              $wd = 'Mardi';
+              break;
+
+            case 3:
+              $wd = 'Mercredi';
+              break;
+
+            case 4:
+              $wd = 'Jeudi';
+              break;
+
+            case 5:
+              $wd = 'Vendredi';
+              break;
+
+            case 6:
+              $wd = 'Samedi';
+              break;
+
+            case 7:
+              $wd = 'Dimanche';
+              break;
+          }
+
+          echo $wd . ' ' . date('d M Y');
+          ?>
+        </h2>
+
         <?php require_once $level . 'back/events.php' ?>
+
         <p class="centered XSscreen">
           <span>Malheureusement,</span>
           <span class="bold">votre écran est trop petit</span>

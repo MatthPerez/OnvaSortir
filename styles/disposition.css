@@ -78,6 +78,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   height: 40%;
+  width: 100%;
 }
 
 .aside section:nth-child(2) div:nth-child(1) span {
@@ -116,7 +117,7 @@
 
 .aside section h3 {
   text-align: center;
-  margin: 1em 0;
+  margin-bottom: 1em;
 }
 
 .aside input,
@@ -155,6 +156,13 @@
   .aside section:nth-child(1) h1 {
     font-size: 1.8rem;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .aside section:nth-child(1) div {
     display: none;
@@ -201,8 +209,21 @@
   }
   .aside section:nth-child(1) {
     width: 90%;
-    max-height: 20vh;
-    overflow-y: scroll;
+    height: auto;
+  }
+  .aside section:nth-child(1) h1 {
+    font-size: 1.7rem;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .aside section:nth-child(1) div {
+    display: none;
   }
   .aside section:nth-child(2) {
     width: 90%;

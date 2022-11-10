@@ -13,22 +13,22 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Nîmes',
-    'birth' => 1983,
+    'birth' => '10/01/1983',
     'inscription' => '01/01/2022',
   ],
 
   [
     'id' => 1,
-    'nom' => 'Alain',
-    'password' => '',
-    'status' => '',
+    'nom' => 'Test',
+    'password' => 'testClient',
+    'status' => 'non abonné',
     'adresse' => '',
-    'mail' => '',
-    'tel' => '',
+    'mail' => 'test@mail.com',
+    'tel' => 610111213,
     'genre' => 'homme',
     'dpt' => 34,
     'ville' => 'Montpellier',
-    'birth' => 1973,
+    'birth' => '12/05/1973',
     'inscription' => '09/11/2022',
   ],
 
@@ -43,7 +43,7 @@ $members = [
     'genre' => 'femme',
     'dpt' => 34,
     'ville' => 'Béziers',
-    'birth' => 2001,
+    'birth' => '17/02/2001',
     'inscription' => '12/06/2022',
   ],
 
@@ -58,7 +58,7 @@ $members = [
     'genre' => 'femme',
     'dpt' => 30,
     'ville' => 'Nîmes',
-    'birth' => 1988,
+    'birth' => '16/10/1988',
     'inscription' => '30/04/2022',
   ],
 
@@ -73,7 +73,7 @@ $members = [
     'genre' => 'femme',
     'dpt' => 33,
     'ville' => 'Bordeaux',
-    'birth' => 1965,
+    'birth' => '13/07/1965',
     'inscription' => '05/10/2022',
   ],
 
@@ -88,7 +88,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Caissargues',
-    'birth' => 1997,
+    'birth' => '04/12/1997',
     'inscription' => '01/09/2022',
   ],
 
@@ -103,7 +103,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 75,
     'ville' => 'Paris',
-    'birth' => 1974,
+    'birth' => '11/10/1974',
     'inscription' => '11/09/2022',
   ],
 
@@ -118,7 +118,7 @@ $members = [
     'genre' => 'femme',
     'dpt' => 34,
     'ville' => 'Lodève',
-    'birth' => 1999,
+    'birth' => '09/02/1999',
     'inscription' => '22/07/2022',
   ],
 
@@ -133,7 +133,7 @@ $members = [
     'genre' => 'femme',
     'dpt' => 38,
     'ville' => 'Saint-Marcelin-de-Cray',
-    'birth' => 1980,
+    'birth' => '17/06/1980',
     'inscription' => '24/07/2022',
   ],
 
@@ -148,7 +148,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 34,
     'ville' => 'Mèze',
-    'birth' => 2005,
+    'birth' => '14/12/2005',
     'inscription' => '11/07/2022',
   ],
 
@@ -163,7 +163,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 34,
     'ville' => 'Montpellier',
-    'birth' => 1955,
+    'birth' => '19/06/1955',
     'inscription' => '30/10/2022',
   ],
 
@@ -178,7 +178,7 @@ $members = [
     'genre' => 'femme',
     'dpt' => 34,
     'ville' => 'Aigne',
-    'birth' => 1965,
+    'birth' => '21/09/1965',
     'inscription' => '29/08/2022',
   ],
 
@@ -193,7 +193,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Nîmes',
-    'birth' => 1981,
+    'birth' => '02/09/1981',
     'inscription' => '03/07/2022',
   ],
 
@@ -208,7 +208,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 13,
     'ville' => 'Marseille',
-    'birth' => 1988,
+    'birth' => '05/09/1988',
     'inscription' => '12/10/2022',
   ],
 
@@ -223,7 +223,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Nîmes',
-    'birth' => 1991,
+    'birth' => '11/05/1991',
     'inscription' => '05/10/2022',
   ],
 
@@ -238,7 +238,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Nîmes',
-    'birth' => 1983,
+    'birth' => '14/07/1983',
     'inscription' => '14/06/2022',
   ],
 
@@ -253,7 +253,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 34,
     'ville' => 'Montbazin',
-    'birth' => 1993,
+    'birth' => '02/12/1993',
     'inscription' => '04/11/2022',
   ],
 
@@ -268,7 +268,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Russan',
-    'birth' => 1954,
+    'birth' => '12/09/1954',
     'inscription' => '17/05/2022',
   ],
 
@@ -283,7 +283,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Lunel',
-    'birth' => 2015,
+    'birth' => '28/02/2015',
     'inscription' => '29/07/2022',
   ],
 
@@ -298,7 +298,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Nîmes',
-    'birth' => 1994,
+    'birth' => '12/08/1994',
     'inscription' => '19/07/2022',
   ],
 
@@ -313,7 +313,7 @@ $members = [
     'genre' => 'femme',
     'dpt' => 80,
     'ville' => 'Amiens',
-    'birth' => 1950,
+    'birth' => '10/05/1950',
     'inscription' => '08/09/2022',
   ],
 
@@ -328,7 +328,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Vézénobres',
-    'birth' => 1973,
+    'birth' => '04/02/1973',
     'inscription' => '10/08/2022',
   ],
 
@@ -343,7 +343,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Bezouce',
-    'birth' => 1977,
+    'birth' => '01/09/1977',
     'inscription' => '22/10/2022',
   ],
 
@@ -358,7 +358,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Manduel',
-    'birth' => 1979,
+    'birth' => '21/09/1979',
     'inscription' => '10/09/2022',
   ],
 
@@ -373,7 +373,7 @@ $members = [
     'genre' => 'femme',
     'dpt' => 59,
     'ville' => 'Lille',
-    'birth' => 1974,
+    'birth' => '04/12/1974',
     'inscription' => '25/09/2022',
   ],
 
@@ -388,7 +388,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 30,
     'ville' => 'Nîmes',
-    'birth' => 1985,
+    'birth' => '04/01/1985',
     'inscription' => '15/08/2022',
   ],
 
@@ -403,7 +403,7 @@ $members = [
     'genre' => 'homme',
     'dpt' => 34,
     'ville' => 'Lunel',
-    'birth' => 1965,
+    'birth' => '02/06/1968',
     'inscription' => '01/01/2022',
   ],
 
@@ -418,7 +418,7 @@ $members = [
     'genre' => 'inconnu',
     'dpt' => 34,
     'ville' => 'Montpellier',
-    'birth' => 1980,
+    'birth' => '18/04/1980',
     'inscription' => '',
   ],
 
@@ -433,7 +433,7 @@ $members = [
     'genre' => 'inconnu',
     'dpt' => 34,
     'ville' => 'Montpellier',
-    'birth' => 1970,
+    'birth' => '04/04/1970',
     'inscription' => '',
   ],
 

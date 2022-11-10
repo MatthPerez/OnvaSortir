@@ -44,9 +44,8 @@ class User
       if ($username == $member['nom']) {
         return '
         <span>
-          <span class="bold">' . $member['nom'] . ',</span>
-          <span>Né(e) en ' . $member['birth'] . ',</span>
-          <span>' . $member['genre'] . '</span>
+        <span>' . ucwords($member['genre']) . ',</span>
+          <span>né(e) le ' . $member['birth'] . '</span>
         </span>
         <span>Inscription le ' . $member['inscription'] . '</span>
         <span><a href="https://www.google.com/maps?q=' . $member['ville'] . '" class="f-blue" target="_blank">' . $member['ville'] . '</a> (' . $member['dpt'] . ')</span>

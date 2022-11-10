@@ -9,6 +9,7 @@
     $month = $_GET['month'];
   }
 
+
   switch ($month) {
     case 1:
       $longMonth = 'janvier';
@@ -92,7 +93,8 @@
       <?php
       $weekStart = date('W', mktime(0, 0, 0, $month, 1, $year));
       $weekEnd = date('W', mktime(0, 0, 0, $month + 1, -1, $year));
-      $weekStart >= 52 and $weekStart > $weekEnd ? $weekStart = '01' : $weekStart = $weekStart;
+
+      $weekStart > $weekEnd ? $weekStart = '00' : $weekStart = $weekStart;
       ?>
       <td colspan="3" id="currentMonth" title="semaines <?= $weekStart ?> à <?= $weekEnd ?>">
         <a href="admin.php">
@@ -148,7 +150,7 @@
         $day1 = date('Y-m-d', mktime(0, 0, 0, 1, -4, $year));
         break;
 
-      case '7':
+      case '0':
         $day1 = date('Y-m-d', mktime(0, 0, 0, 1, -5, $year));
         break;
     }
@@ -156,6 +158,8 @@
     $day0 = substr($day1, 8, 2);
     $month0 = substr($day1, 5, 2);
     $year0 = substr($day1, 0, 4);
+
+    // Certaines années ne commencent pas au 1er janvier (comme 2024). Pourquoi ?
 
     for ($a = $weekStart; $a <= $weekEnd; $a++) {
       echo '<tr>';

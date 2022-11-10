@@ -15,8 +15,8 @@
       }
     }
   } else {
-    $user0 = $_SERVER['REMOTE_ADDR'];
-    $pass0 = 'xxxxx';
+    $user0 = 'test';
+    $pass0 = 'testClient';
   }
   ?>
   <input type="text" name="username" id="username" value="<?= $user0 ?>">

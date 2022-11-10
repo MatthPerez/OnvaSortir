@@ -157,6 +157,7 @@ aside a:hover {
   border-radius: 10px;
   background-color: #ffffffaf;
   height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -688,5 +689,23 @@ aside a:hover {
   display: block;
   -webkit-animation: 800ms fade;
           animation: 800ms fade;
+}
+
+#previousMonth,
+#nextMonth {
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  border-radius: 50%;
+  -webkit-transition: 700ms all ease;
+  transition: 700ms all ease;
+}
+
+#previousMonth:hover,
+#nextMonth:hover {
+  -webkit-transition: 100ms all ease;
+  transition: 100ms all ease;
+  background-color: #5d3f0e56;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=parts.css.map */

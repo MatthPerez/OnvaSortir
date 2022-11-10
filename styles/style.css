@@ -59130,4 +59130,30 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
+.cadred {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #ffffffbc;
+  -webkit-box-shadow: 2px 5px 10px #585555;
+          box-shadow: 2px 5px 10px #585555;
+}
+
+.nbList {
+  list-style: inside decimal;
+}
+
+.nbList li {
+  -webkit-transition: 200ms all ease;
+  transition: 200ms all ease;
+  padding: 4px;
+}
+
+.nbList li:hover {
+  -webkit-transition: all ease;
+  transition: all ease;
+  background-color: #3f0d3f;
+  color: #eab7ea;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

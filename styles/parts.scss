@@ -110,6 +110,7 @@ aside {
   border-radius: 10px;
   background-color: #ffffffaf;
   height: 100%;
+  width: 100%;
 
   @media screen and (max-width: 1000px) {
     height: auto;
@@ -545,4 +546,19 @@ aside {
 .active {
   display: block;
   animation: 800ms fade;
+}
+
+#previousMonth,
+#nextMonth {
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  border-radius: 50%;
+  transition: 700ms all ease;
+
+  &:hover {
+    transition: 100ms all ease;
+    background-color: #5d3f0e56;
+    border-radius: 20px;
+  }
 }

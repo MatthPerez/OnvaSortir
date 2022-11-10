@@ -1096,3 +1096,26 @@ footer {
   flex-direction: row;
 }
 
+.cadred {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #ffffffbc;
+  box-shadow: 2px 5px 10px #585555;
+}
+
+.nbList {
+  list-style: inside decimal;
+  
+  li {
+    transition: 200ms all ease;
+    padding: 4px;
+    
+    &:hover {
+      transition: all ease;
+      background-color: #3f0d3f;
+      color: #eab7ea;
+      cursor: pointer;
+    }
+
+  }
+}
