@@ -108,6 +108,10 @@ $quicksand: "Quicksand", sans-serif;
   font-family: "VinegarStroke";
   src: url("../médias/fonts/VinegarStroke.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Chocolate";
+  src: url("../médias/fonts/Chocolate.otf") format("otf");
+}
 .comfortaa {
   font-family: $comfortaa;
 }
@@ -139,6 +143,9 @@ $quicksand: "Quicksand", sans-serif;
 }
 .HelveticaNeue {
   font-family: "HelveticaNeue", cursive;
+}
+.Chocolate {
+  font-family: "Chocolate", cursive;
 }
 
 * {
@@ -612,6 +619,9 @@ $purple7: #e0c4e0;
 .centered {
   text-align: center;
 }
+.just {
+  text-align: justify;
+}
 
 .fixed {
   position: fixed;
@@ -850,6 +860,9 @@ a {
 .btn7 {
   @include btn7;
 }
+.btn8 {
+  @include btn8;
+}
 
 .hide {
   @media screen and (max-width: 768px) {
@@ -1001,6 +1014,7 @@ footer {
   justify-content: center;
   gap: 5px;
   caret-color: transparent;
+  z-index: 10000;
 }
 
 #clock {
@@ -1117,5 +1131,15 @@ footer {
       cursor: pointer;
     }
 
+  }
+}
+
+.bump {
+  animation: 1000ms bump infinite;
+}
+
+@keyframes bump {
+  50% {
+    transform: scale(1.1);
   }
 }

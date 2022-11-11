@@ -409,7 +409,7 @@ $members = [
 
   [
     'id' => 27,
-    'nom' => 'Visiteur 1',
+    'nom' => 'Visiteur',
     'password' => 'rnej?6540',
     'status' => 'abonné',
     'adresse' => '',
@@ -419,22 +419,7 @@ $members = [
     'dpt' => 34,
     'ville' => 'Montpellier',
     'birth' => '18/04/1980',
-    'inscription' => '',
-  ],
-
-  [
-    'id' => 28,
-    'nom' => 'Visiteur 2',
-    'password' => 'mifv?9299',
-    'status' => 'abonné',
-    'adresse' => '',
-    'mail' => '',
-    'tel' => '',
-    'genre' => 'inconnu',
-    'dpt' => 34,
-    'ville' => 'Montpellier',
-    'birth' => '04/04/1970',
-    'inscription' => '',
+    'inscription' => '01/01/2022',
   ],
 
 ];

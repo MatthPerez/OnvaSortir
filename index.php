@@ -30,10 +30,7 @@ $seo = $page_index->getSeo();
 
 require_once $level . 'back/head.php';
 require_once $level . 'back/icons.php';
-?>
 
-<!-- <body class="bg-hiking2"> -->
-<?php
 if (date('H') < 18) {
   echo '<body class="bg-montainJour">';
 } else {
@@ -41,12 +38,10 @@ if (date('H') < 18) {
 }
 require_once $level . 'back/connectionForm.php';
 require_once $level . 'js/cookies.html';
-?>
-</body>
 
-<?php
+echo '</body>';
+
 $mode = 'dark_mode';
 require_once $level . 'back/footer.php';
-?>
 
-</html>
+echo '</html>';

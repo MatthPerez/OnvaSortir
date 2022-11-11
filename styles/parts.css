@@ -387,6 +387,30 @@ aside a:hover {
   text-align: center;
 }
 
+.description {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.description p {
+  text-align: justify;
+}
+
 .mentions {
   width: 70%;
   margin-left: 15%;
@@ -707,5 +731,213 @@ aside a:hover {
   transition: 100ms all ease;
   background-color: #5d3f0e56;
   border-radius: 20px;
+}
+
+.groups {
+  caret-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+
+.groups h1 {
+  margin-bottom: 1em;
+}
+
+.groups li {
+  text-align: center;
+  padding: 4px;
+  margin: 5px;
+  border-radius: 4px;
+  background-color: #e2cfaa;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+
+.groups li:hover {
+  background-color: #e7c47e;
+  -webkit-transition: 50ms all ease;
+  transition: 50ms all ease;
+}
+
+.groups div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
+}
+
+.groups div span {
+  max-width: 20%;
+  min-width: 150px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  background-color: #5c1144;
+  color: white;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+
+.groups div span:hover {
+  -webkit-transition: 50ms all ease;
+  transition: 50ms all ease;
+  background-color: #170311;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.groups div span a {
+  color: white;
+}
+
+.groups form {
+  margin-bottom: 2em;
+}
+
+.groups form input,
+.groups form button {
+  padding: 10px;
+}
+
+.groups form input {
+  caret-color: purple;
+}
+
+.myActivity {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+  margin-bottom: 15em;
+}
+
+.myActivity h1 {
+  margin: 50px;
+  font-family: "Propagan";
+  font-size: 5rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 20px 80px;
+  border-radius: 40px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.myActivity img {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 20%;
+  z-index: -1;
+}
+
+.myActivity div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+}
+
+.myActivity div p {
+  width: 70%;
+  text-align: justify;
+  text-indent: 1em;
+  font-family: "Quicksand";
+}
+
+@media screen and (max-width: 768px) {
+  .myActivity div p {
+    width: 80%;
+  }
+}
+
+.myActivity div ul:nth-child(1) {
+  width: auto;
+  margin-bottom: 2em;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: #7dc67dba;
+}
+
+.myActivity div ul:nth-child(1) li {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.myActivity div ul:nth-child(1) li span:first-child {
+  font-weight: bold;
+}
+
+.myActivity div ul:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 1em;
+  background-color: #7dc67dba;
+}
+
+.myActivity div ul:nth-child(2) a {
+  color: black;
+  -webkit-transition: 200ms all ease;
+  transition: 200ms all ease;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.myActivity div ul:nth-child(2) a:hover {
+  -webkit-transition: 50ms all ease;
+  transition: 50ms all ease;
+  background-color: #0e360eba;
+  color: #f7fff7ba;
 }
 /*# sourceMappingURL=parts.css.map */

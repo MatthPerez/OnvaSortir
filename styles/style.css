@@ -128,6 +128,11 @@
   src: url("../médias/fonts/VinegarStroke.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Chocolate";
+  src: url("../médias/fonts/Chocolate.otf") format("otf");
+}
+
 .comfortaa {
   font-family: "Comfortaa", cursive;
 }
@@ -168,6 +173,10 @@
 
 .HelveticaNeue {
   font-family: "HelveticaNeue", cursive;
+}
+
+.Chocolate {
+  font-family: "Chocolate", cursive;
 }
 
 * {
@@ -58194,6 +58203,10 @@
   text-align: center;
 }
 
+.just {
+  text-align: justify;
+}
+
 .fixed {
   position: fixed;
   text-align: center;
@@ -58702,8 +58715,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 400ms background-color ease;
-  transition: 400ms background-color ease;
+  -webkit-transition: 400ms all ease;
+  transition: 400ms all ease;
 }
 
 .btn6:hover {
@@ -58761,6 +58774,52 @@ a {
   -webkit-transition: 100ms background-color ease;
   transition: 100ms background-color ease;
   background-color: #fffffff1;
+}
+
+.btn8 {
+  margin-left: 0;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  position: relative;
+  padding: 1em;
+  width: 25vw;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 400ms all ease;
+  transition: 400ms all ease;
+  background-color: #e74040bc;
+  -webkit-box-shadow: 2px 4px grey;
+          box-shadow: 2px 4px grey;
+}
+
+@media screen and (max-width: 768px) {
+  .btn8 {
+    width: 55vw;
+  }
+}
+
+.btn8:hover {
+  -webkit-transition: 100ms all ease;
+  transition: 100ms all ease;
+  background-color: #e74040;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -58963,6 +59022,7 @@ footer {
           justify-content: center;
   gap: 5px;
   caret-color: transparent;
+  z-index: 10000;
 }
 
 #clock {
@@ -59155,5 +59215,24 @@ footer {
   background-color: #3f0d3f;
   color: #eab7ea;
   cursor: pointer;
+}
+
+.bump {
+  -webkit-animation: 1000ms bump infinite;
+          animation: 1000ms bump infinite;
+}
+
+@-webkit-keyframes bump {
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes bump {
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -152,6 +152,7 @@
   }
   .aside section:nth-child(1) {
     width: 92vw;
+    height: auto;
   }
   .aside section:nth-child(1) h1 {
     font-size: 1.8rem;

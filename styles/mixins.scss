@@ -150,7 +150,7 @@
   border: 1px solid black;
   justify-content: center;
   align-items: center;
-  transition: 400ms background-color ease;
+  transition: 400ms all ease;
 
   @media screen and (max-width: 768px) {
     width: 55vw;
@@ -186,6 +186,37 @@
   &:hover {
     transition: 100ms background-color ease;
     background-color: #fffffff1;
+  }
+}
+
+@mixin btn8 {
+  margin-left: 0;
+  text-align: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+  padding: 1em;
+  width: 25vw;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: 400ms all ease;
+  background-color: #e74040bc;
+  box-shadow: 2px 4px grey;
+
+  @media screen and (max-width: 768px) {
+    width: 55vw;
+  }
+
+  &:hover {
+    transition: 100ms all ease;
+    background-color: #e74040;
+    transform: translateY(4px);
+    box-shadow: none;
   }
 }
 

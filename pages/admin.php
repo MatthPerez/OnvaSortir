@@ -35,7 +35,7 @@ $title = $page_admin->getTitle();
 $seo = $page_admin->getSeo();
 
 $style2 = $level . 'styles/disposition.css';
-// $script2 = 'calendarDay';
+$script2 = 'calendarDay';
 
 require_once $level . 'back/head.php';
 require_once $level . 'back/icons.php';
@@ -58,20 +58,23 @@ require_once $level . 'back/aside.php';
       <div>
         <span>
           <?php
-          require_once $level . 'back/calendar3.php';
+          require_once $level . 'back/calendar.php';
           ?>
         </span>
         <span>
-          <h2>Bienvenue à nos nouveaux membres</h2>
+          <h2>Nouveaux membres</h2>
           <ul class="centered">
             <?php
             require $level . 'back/lists/members.php';
             foreach ($members as $member) {
-              echo '
-              <li>
-                <span class="bold">' . $member['nom'] . '</span>
-                <span><a href="https://www.google.com/maps?q=' . $member['ville'] . '" target="_blank">(' . $member['ville'] . ')</a></span>
-              </li>';
+              if (substr($member['inscription'], 3, 2) == date('m')) {
+                echo '
+                <li>
+                  <span class="bold">' . $member['nom'] . '</span>
+                  <span><a href="https://www.google.com/maps?q=' . $member['ville'] . '" target="_blank">(' . $member['ville'] . ')</a></span>
+                  <span>Inscription le ' . $member['inscription'] . '</span>
+                </li>';
+              }
             }
             ?>
           </ul>
@@ -80,7 +83,6 @@ require_once $level . 'back/aside.php';
 
       <div>
         <h2 id="currentDate" title="<?= date('d/m/Y') ?>" class="f12decrem centered">
-
           <?php
           switch (date('w')) {
             case 1:

@@ -124,7 +124,7 @@ $activities = [
 
   [
     'id' => 21,
-    'name' => 'Footing',
+    'name' => 'Footing, jogging',
     'address' => 'footing.jpg',
   ],
 
