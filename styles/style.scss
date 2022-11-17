@@ -1,4 +1,5 @@
 @import "mixins.scss";
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 $montserrat: "Montserrat", sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
@@ -244,7 +245,7 @@ $purple7: #e0c4e0;
   color: white;
 }
 .f-red {
-  color: red;
+  color: red !important;
 }
 .f-dark-red {
   color: #5e1d1d;
@@ -863,6 +864,9 @@ a {
 .btn8 {
   @include btn8;
 }
+.btn9 {
+  @include btn9;
+}
 
 .hide {
   @media screen and (max-width: 768px) {
@@ -905,83 +909,6 @@ a {
 .Kscreen {
   @media screen and (max-width: 1000px) {
     display: none;
-  }
-}
-
-.homeTitle {
-  // background-color: red;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 40%;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    $orange: #f7b843;
-    @include slideDown;
-    margin: 0 1em;
-    font-size: 4rem;
-    // ici
-    font-family: "Propagan";
-    color: $orange;
-    text-shadow: 2px 3px 5px black;
-    @media screen and (max-width: 768px) {
-      font-size: 2rem;
-    }
-  }
-}
-
-.home {
-  @include bg-blur;
-  // background-color: greenyellow;
-  border-radius: 10px;
-  position: fixed;
-  right: 40px;
-  bottom: 80px;
-
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  text-align: center;
-
-  label {
-    font-weight: bold;
-  }
-
-  input {
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 2em;
-  }
-
-  button {
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    width: 100px;
-    transition: 700ms all ease;
-    box-shadow: 0 2px 2px black;
-    font-weight: bold;
-    font-size: 1.4rem;
-    font-family: "House";
-    &:hover {
-      transition: 100ms all ease;
-      transform: translateY(2px);
-      box-shadow: none;
-    }
-    &:focus {
-      background-color: #9dec9d;
-    }
   }
 }
 
@@ -1070,6 +997,17 @@ footer {
   color: transparent;
 }
 
+.superLink {
+  font-weight: bold !important;
+  color: red !important;
+  transition: 200ms all ease;
+
+  &:hover {
+    transition: 50ms all ease;
+    color: #800000 !important;
+  }
+}
+
 .reflected {
   display: inline-block;
   text-align: center;
@@ -1099,6 +1037,14 @@ footer {
 .conx-list {
   z-index: 2;
   height: 100%;
+  text-align: center;
+
+  li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
 }
 
 .col {
@@ -1108,6 +1054,14 @@ footer {
 .row {
   display: flex;
   flex-direction: row;
+
+  .px {
+    gap: 10px;
+  }
+
+  .em {
+    gap: 1em;
+  }
 }
 
 .cadred {
@@ -1119,18 +1073,17 @@ footer {
 
 .nbList {
   list-style: inside decimal;
-  
+
   li {
     transition: 200ms all ease;
     padding: 4px;
-    
+
     &:hover {
       transition: all ease;
       background-color: #3f0d3f;
       color: #eab7ea;
       cursor: pointer;
     }
-
   }
 }
 

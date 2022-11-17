@@ -28,17 +28,23 @@ $script2 = 'carousel';
 require_once $level . 'back/head.php';
 require_once $level . 'back/icons.php';
 require_once $level . 'back/aside.php';
-require $level . 'back/lists/groups.php';
+// require $level . 'back/lists/groups.php';
 
 if (
   isset($_GET['id'])
 ) {
   $myActivity = htmlspecialchars($_GET['id']);
-  foreach ($activities as $activity) {
-    if ($activity['name'] == $myActivity) {
-      $address = $activity['address'];
-      require_once $level . 'back/groups1.php';
-    }
+
+  // foreach ($activities as $activity) {
+  //   if ($activity['name'] == $myActivity) {
+  //     $address = $activity['address'];
+  //     require_once $level . 'back/groups1.php';
+  //   }
+  // }
+
+  require_once $level . 'back/getActivities.php';
+  while ($activity = $activities->fetch(PDO::FETCH_OBJ)) {
+    $address = $activity->name;
   }
 } else {
   require_once $level . 'back/groups0.php';

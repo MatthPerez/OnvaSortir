@@ -26,23 +26,69 @@ $seo = $page_members->getSeo();
 require_once $level . 'back/head.php';
 require_once $level . 'back/icons.php';
 require_once $level . 'back/aside.php';
+require $level . 'back/getMembers.php';
 ?>
 
 <body class="bg-crowd6">
   <div class="membersInterface">
     <section>
-      <form action="affichMembers.php" method="POST" class="membersForm">
-        <h1>Retrouver une personne</h1>
+      <h1>Retrouver une personne</h1>
 
-        <label for="pseudo">Pseudonyme</label>
-        <input type="text" name="pseudo" id="pseudo">
+      <!-- Rechercher par pseudo -->
+      <form action="affichMembersName.php" method="POST" class="membersForm">
+        <label for="pseudo">par pseudonyme</label>
+        <input list="pseudos" name="pseudo" id="pseudo">
+        <datalist id="pseudos">
+          <?php
+          // foreach ($members as $member) {
+          //   if (
+          //     $member['nom'] != 'Dév' and
+          //     $member['nom'] != 'Test'
+          //   ) {
+          //     echo '<option value="' . $member['nom'] . '">';
+          //   }
+          // }
 
-        <label for="dpt">Département</label>
-        <input type="number" name="dpt" id="dpt">
+          while ($member = $members->fetch(PDO::FETCH_OBJ)) {
+            if (
+              $member->nom != 'Dév' and
+              $member->nom != 'Test'
+            ) {
+              echo '<option value="' . $member->nom . '">';
+            }
+          }
+          ?>
+        </datalist>
+        <button type="submit">Rechercher</button>
+      </form>
 
-        <label for="city">Ville</label>
-        <input type="text" name="city" id="city">
+      <!-- Rechercher par département -->
+      <form action="affichMembersDpt.php" method="POST" class="membersForm">
+        <label for="department">par département</label>
+        <input list="departments" name="department" id="department">
+        <datalist id="departments">
+          <?php
+          require_once $level . 'back/lists/departmentsInFrance.php';
+          foreach ($departments as $department) {
+            echo '<option value="' . $department['name'] . '">';
+          }
+          ?>
+        </datalist>
+        <button type="submit">Rechercher</button>
+      </form>
 
+      <!-- Rechercher par ville -->
+      <form action="affichMembersCity.php" method="POST" class="membersForm">
+        <label for="city">par ville</label>
+        <input list="cities" name="city" id="city">
+        <datalist id="cities">
+          <?php
+          require_once $level . 'back/lists/citiesInFrance.php';
+          foreach ($cities as $city) {
+            echo '<option value="' . $city['name'] . '">';
+          }
+          ?>
+        </datalist>
         <button type="submit">Rechercher</button>
       </form>
     </section>
@@ -57,30 +103,15 @@ require_once $level . 'back/aside.php';
         <img src="<?= $level ?>médias/pictures/sorry.jpg" alt="sorry" class="rounded20">
       </div>
 
-      <table class="membersTable">
-        <thead>
-          <td>Pseudonyme</td>
-          <td class="largeScreen">Genre</td>
-          <td>Ville</td>
-          <td>Profil</td>
-        </thead>
-
-        <tbody>
-          <?php
-          require_once $level . 'back/lists/members.php';
-          foreach ($members as $member) {
-            echo '
-            <tr>
-              <td>' . $member['nom'] . '</td>
-              <td class="largeScreen">' . $member['genre'] . '</td>
-              <td><a href="https://www.google.com/maps?q=' . $member['ville'] . '" target="_blank" class="f-black">' . $member['ville'] . '</a> (' . $member['dpt'] . ')</td>
-              <td>' . $identity . '</td>
-            </tr>
-            ';
-          }
-          ?>
-        </tbody>
-      </table>
+      <?php
+      if (isset($_GET['id'])) {
+        if (is_integer($_GET['id'] + 0)) {
+          require_once $level . 'back/createUserPage.php';
+        }
+      } else {
+        require_once $level . 'back/allMembers.php';
+      }
+      ?>
     </section>
 
   </div>

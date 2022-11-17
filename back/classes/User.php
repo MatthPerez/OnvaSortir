@@ -20,11 +20,11 @@ class User
     return $this;
   }
 
-  public function getSeniority($username)
+  public function getSeniority()
   {
     require '../back/lists/members.php';
     foreach ($members as $member) {
-      if ($username == $member['nom']) {
+      if ($this->name == $member['nom']) {
         $inscription = $member['inscription'];
         $day = substr($inscription, 0, 2);
         $month = substr($inscription, 3, 2);
@@ -37,11 +37,11 @@ class User
     }
   }
 
-  public function getDatas($username)
+  public function getDatas()
   {
     require '../back/lists/members.php';
     foreach ($members as $member) {
-      if ($username == $member['nom']) {
+      if ($this->name == $member['nom']) {
         return '
         <span>
         <span>' . ucwords($member['genre']) . ',</span>
@@ -54,21 +54,21 @@ class User
     }
   }
 
-  public function getStatus($username)
+  public function getStatus()
   {
     require '../back/lists/members.php';
     foreach ($members as $member) {
-      if ($username == $member['nom']) {
+      if ($this->name == $member['nom']) {
         return $member['status'];
       }
     }
   }
 
-  public function getPhone($username)
+  public function getPhone()
   {
     require '../back/lists/members.php';
     foreach ($members as $member) {
-      if ($username == $member['nom']) {
+      if ($this->name == $member['nom']) {
         $longPhone = '0' . substr($member['tel'], 0, 1) . ' ';
         $longPhone .= substr($member['tel'], 1, 2) . ' ';
         $longPhone .= substr($member['tel'], 3, 2) . ' ';
@@ -79,12 +79,22 @@ class User
     }
   }
 
-  public function getMail($username)
+  public function getMail()
   {
     require '../back/lists/members.php';
     foreach ($members as $member) {
-      if ($username == $member['nom']) {
+      if ($this->name == $member['nom']) {
         return '<a href="mailto:' . $member['mail'] . '">' . $member['mail'] . '</a>';
+      }
+    }
+  }
+
+  public function getPhoto()
+  {
+    require '../back/lists/members.php';
+    foreach ($members as $member) {
+      if ($this->name == $member['nom']) {
+        return $member['photo'];
       }
     }
   }

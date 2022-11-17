@@ -6,7 +6,7 @@
   paypal.Buttons({
     style: {
       shape: 'rect',
-      color: 'silver',
+      color: 'gold',
       layout: 'vertical',
       label: 'subscribe'
     },

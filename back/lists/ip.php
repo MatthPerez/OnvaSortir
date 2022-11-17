@@ -783,6 +783,11 @@ $ips = [
   ],
 
   [
+    'address' => '66.249.83.81',
+    'name' => 'Carlos Da Silva 02',
+  ],
+
+  [
     'address' => '66.249.93.220',
     'name' => 'Carlos DA SILVA ? 02',
   ],
@@ -885,6 +890,11 @@ $ips = [
   [
     'address' => '80.214.156.163 ',
     'name' => 'Samuel portable ? 01',
+  ],
+
+  [
+    'address' => '80.214.158.107',
+    'name' => 'Carlos Da Silva 01',
   ],
 
   [
@@ -1099,7 +1109,7 @@ $ips = [
 
   [
     'address' => '91.160.16.94',
-    'name' => 'Carlos DA SILVA',
+    'name' => 'Carlos DA SILVA ?',
   ],
 
   [
@@ -1165,6 +1175,11 @@ $ips = [
   [
     'address' => '93.23.198.130',
     'name' => 'Marseille 01',
+  ],
+
+  [
+    'address' => '93.23.248.234',
+    'name' => 'Samuel Mélia (maison)',
   ],
 
   [

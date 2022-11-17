@@ -220,6 +220,24 @@
   }
 }
 
+.btn9 {
+  $myColor: #dddddd;
+  margin-top: 3em;
+  background: linear-gradient(60deg, $myColor, white, $myColor);
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px grey;
+  font-weight:  bold;
+  transition: 200ms all ease;
+
+  &:hover {
+    transition: 100ms all ease;
+    transform: translateY(4px);
+    box-shadow: none;
+  }
+}
+
 @mixin slideLeft {
   animation: 2s slideLeft ease;
 }
@@ -231,4 +249,14 @@
 }
 @mixin slideDown {
   animation: 2s slideDown ease;
+}
+
+@mixin transparent0 {
+  background: linear-gradient(to bottom, #ffffff4d 0, transparent 50%, transparent 85%, #ffffff1a 15%, #ffffff4d 100%);
+}
+
+@mixin focusInput {
+  transition: 100ms all ease;
+  box-shadow: 5px 0 8px gray;
+  background-color: white;
 }

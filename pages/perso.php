@@ -15,7 +15,9 @@ if (
 }
 
 require '../back/classes/Page.php';
+require '../back/classes/User.php';
 $page_perso = new Page('../', 'dark_mode', 'styles/style.css', 'Perso', '');
+$me = new User($_SESSION['username']);
 
 $level = $page_perso->getLevel();
 $mode = $page_perso->getMode();
@@ -35,20 +37,34 @@ require_once $level . 'back/aside.php';
       <h1>
         <span>Espace perso de</span>
         <span class="f-blue"><?= $_SESSION['username'] ?></span>
+        <?php
+        if ($me->getStatus() != '') {
+          echo '
+          <div class="f1rem">
+            <span>- abonné</span>
+            <span class="f-red">' . $me->getStatus() . '</span>
+            <span>-</span>
+          </div>
+          ';
+        }
+        ?>
       </h1>
-
     </section>
 
     <section>
       <?php
-      require_once $level . 'back/pass.php';
-      $status = '';
-      foreach ($users as $user) {
-        if ($user['username'] == $_SESSION['username']) {
-          $_SESSION['status'] = $user['status'];
+      require_once $level . 'back/profil.php';
+
+      if (isset($_GET['page'])) {
+        require $level . 'back/lists/profil_pages.php';
+        if (in_array($_GET['page'], $pages)) {
+          require_once $level . 'back/pages/' . $_GET['page'] . '.php';
+        }
+      } else {
+        if ($me->getStatus() != '') {
+          require_once $level . 'back/pages/' . $me->getStatus() . '.php';
         }
       }
-      require_once $level . 'back/pages/' . $_SESSION['status'] . '.php';
       ?>
     </section>
   </div>

@@ -36,77 +36,39 @@ require_once $level . 'back/aside.php';
     <h1>Espace abonnement</h1>
 
     <div>
-      <p>Par défaut, vous avez accès à de nombreuses actions gratuites comme par exemple :</p>
+      <p>
+        <span>Par défaut, vous avez accès à de nombreuses</span>
+        <span class="bold f-blue">actions gratuites</span>
+        <span>comme par exemple :</span>
+      </p>
+
       <ul>
-        <li>Visualiser le calendrier des sorties</li>
-        <li>Voir les groupes d'intérêts</li>
-        <li>Voir les membres</li>
+        <li>Visualiser le calendrier des sorties et rejoindre les évènements</li>
+        <li>Consulter les groupes d'intérêts</li>
+        <li>Voir la liste des membres</li>
         <li>Connaître les actualités de votre région</li>
       </ul>
 
-      <p class="bold">
-        <span>Découvrez toutes les fonctionnalités du site</span>
-        <span class="f-blue">J'ai trouvé ici</span>
-        <span>en souscrivant à un abonnement mensuel. Vous avez le choix entre plusieurs formules, selon vos envies. Chaque classe inclut les  avantages des précédentes.</span>
+      <p>
+        <span>Vous pouvez obtenir de nouveaux avantages en souscrivant un</span>
+        <span class="bold f-red">abonnement mensuel de 6 euros</span>
+        <span>et qui vous donne accès aux avantages suivants :</span>
       </p>
 
-      <table class="prem_table">
-        <thead>
-          <td class="f-red">Classe🔻</td>
-          <td>Montant</td>
-          <td class="largeScreen">Avantages</td>
-        </thead>
+      <ul>
+        <li>Voir les membres connectés et les organisateurs les plus actifs</li>
+        <li>Avoir son propre espace de messagerie sur le site</li>
+        <li>Avantage fantastique n°3</li>
+        <li>Avantage fantastique n°4</li>
+      </ul>
 
-        <tbody>
-          <tr>
-            <td class="btn1"><a href="premium.php?id=silver">► Silver</a></td>
-            <td>6 €/mois</td>
-            <td class="largeScreen">Rejoindre et organiser des évènements</td>
-          </tr>
+      <?php require_once $level . 'back/payment_silver.php' ?>
 
-          <tr>
-            <td class="btn1"><a href="premium.php?id=gold">► Gold</a>
-            </td>
-            <td>8 €/mois</td>
-            <td class="largeScreen">Gérer des groupes publics</td>
-          </tr>
-          <tr>
-            <td class="btn1"><a href="premium.php?id=platine">► Platine</a></td>
-            <td>10 €/mois</td>
-            <td class="largeScreen">Gérer des groupes privés</td>
-          </tr>
-        </tbody>
-      </table>
+      <a href="../pages/mentions.php" target="_blank"><button class="btn0">Consulter les mentions légales</button></a>
     </div>
   </section>
 
-  <section class="payments">
-    <?php
-    if (isset($_GET)) {
-      if (
-        $_GET['id'] == 'silver' or
-        $_GET['id'] == 'gold' or
-        $_GET['id'] == 'platine'
-      ) {
-        echo '<div id="' . $_GET['id'] . '0" class="payment">';
-        require_once $level . 'back/payment_' . $_GET['id'] . '.php';
-        echo '</div>';
-      } else {
-        header('Location: premium.php');
-      }
-    }
-    ?>
 
-    <a href="../pages/mentions.php" target="_blank"><button class="btn0">Consulter les mentions légales</button></a>
-  </section>
-
-  <section class="description">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptate voluptas sint consequatur rem accusamus doloribus rerum pariatur autem, assumenda nihil ut repellat blanditiis laudantium aspernatur, quia repellendus reprehenderit laborum fugit aliquam, quos neque numquam. Sunt asperiores magni, impedit ut eligendi nam aut, est ipsa voluptate numquam, maiores quam corrupti non. Et eligendi expedita quidem, corporis quam, rerum placeat aspernatur esse officiis ut id, pariatur tenetur inventore ex saepe quo provident tempore labore possimus nihil.</p>
-    
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et vitae quasi optio velit voluptate autem. Reprehenderit maiores fugiat rem vel amet. Recusandae id odio illo mollitia aperiam similique magni molestiae quo esse et neque assumenda, obcaecati adipisci dolores velit! Dolorem expedita quidem sapiente unde assumenda nulla a consequatur non fugiat, eum, facilis molestiae aspernatur cupiditate consectetur corrupti dolorum hic quaerat iure consequuntur! Aspernatur distinctio explicabo consectetur ducimus cum! Beatae qui laudantium reprehenderit eaque ex dolores repudiandae et unde voluptates!</p>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt provident expedita vitae totam! Quisquam nisi rem nam neque, possimus provident et, vel aliquam laboriosam voluptatum tempora enim id consequatur voluptatibus?</p>
-  </section>
 
 </body>
 

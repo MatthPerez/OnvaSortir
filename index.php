@@ -28,6 +28,8 @@ $style = $page_index->getStyle();
 $title = $page_index->getTitle();
 $seo = $page_index->getSeo();
 
+// $style2 = $level . 'styles/connect.css';
+
 require_once $level . 'back/head.php';
 require_once $level . 'back/icons.php';
 

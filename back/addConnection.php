@@ -10,27 +10,31 @@ if (isset($_POST['username'])) {
 if (isset($_SESSION['username'])) {
   $username = $_SESSION['username'];
 }
-  
-$my_ip = $_SERVER['REMOTE_ADDR'];
-$ip_name = $my_ip;
+
+$caught_ip = $_SERVER['REMOTE_ADDR'];
 
 $file1 = $level . 'back/lists/ip.html';
 $file2 = $level . 'back/lists/newip.html';
-$file3 = $file2;
 
 foreach ($ips as $ip) {
-  if ($ip['address'] == $my_ip) {
-    $ip_name = $ip['name'];
-    $file3 = $file1;
+  if ($ip['address'] === $caught_ip) {
+    $caught_ip = $ip['name'];
   }
 }
 
-date_default_timezone_set('Europe/Paris');
-$date = date("d-m-Y");
-$time = date("H:i:s");
+if (
+  $username != 'Dév' and
+  $caught_ip != 'Dév local'
+) {
+  date_default_timezone_set('Europe/Paris');
+  $date = date("d-m-Y");
+  $time = date("H:i:s");
 
-$message = '<span class="bold f-blue">' . $username . '</span><span>-</span><span>' . $date . '</span><span class="largeScreen">-</span><span class="largeScreen">' . $time . '</span><span>-</span><span class="f-dark-red">' . $ip_name . '</span><span>-</span><span>' . $title . '</span>' . PHP_EOL;
+  $message = '<span class="bold f-blue">' . $username . '</span><span>-</span><span>' . $date . '</span><span class="largeScreen">-</span><span class="largeScreen">' . $time . '</span><span>-</span><span class="f-dark-red">' . $caught_ip . '</span><span>-</span><span>' . $title . '</span>' . PHP_EOL;
 
-// if ($ip_name != 'Dév local') {
-file_put_contents($file3, $message, FILE_APPEND);
-// }
+  if (is_numeric(substr($caught_ip, 0, 1))) {
+    file_put_contents($file2, $caught_ip, FILE_APPEND);
+  } else {
+    file_put_contents($file1, $message, FILE_APPEND);
+  }
+}

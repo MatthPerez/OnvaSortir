@@ -7,10 +7,9 @@
     $lines = file($url);
     foreach ($lines as $line => $content) {
       echo '
-              <li>
-                <span>' . $line + 1 . ' ' . $content . '</span>
-              </li>
-              ';
+        <li>
+          <span>' . $line + 1 . '</span>' . $content .
+        '</li>';
     }
     ?>
   </ul>

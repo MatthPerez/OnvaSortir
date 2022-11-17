@@ -114,7 +114,8 @@ require_once $level . 'back/aside.php';
               break;
           }
 
-          echo $wd . ' ' . date('d M Y');
+          // echo $wd . ' ' . date('d M Y');
+          echo 'Les évènements pour le ' . date('d/m/Y');
           ?>
         </h2>
 

@@ -172,10 +172,11 @@
       for ($b = 0; $b < 7; $b++) {
         $thisDay = date('d', mktime(0, 0, 0, $month0, $day0 + $b + (7 * $a), $year0));
         $thisLongDay = date('d/m/Y', mktime(0, 0, 0, $month0, $day0 + $b + (7 * $a), $year0));
+        $idDay = substr($thisLongDay, 0, 2) . substr($thisLongDay, 3, 2) . substr($thisLongDay, 6, 4);
 
         if (date('m', mktime(0, 0, 0, $month0, $day0 + $b + (7 * $a), $year0)) == $month) {
           date('d/m/Y') == $thisLongDay ? $redFont = 'f-red bold' : $redFont = '';
-          echo '<td id="' . $thisLongDay . '" title="' . $thisLongDay . '" class="' . $redFont . '">' . $thisDay . '</td>';
+          echo '<td id="' . $idDay . '" title="' . $thisLongDay . '" onClick="reply_click(this.id)" class="' . $redFont . ' ">' . $thisDay . '</td>';
         } else {
           echo '<td class="f-light-grey">' . $thisDay . '</td>';
         }

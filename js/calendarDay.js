@@ -13,8 +13,8 @@ const currentDateUpside = document.getElementById('currentMonth').title;
 const currentMonth = document.getElementById('currentMonth');
 const currentDateDownside = document.getElementById('currentDate');
 
-const cle = document.getElementById('08/01/2023');
-cle.addEventListener('click', () => {
-  currentDateDownside.innerHTML = cle.title;
-})
+function reply_click(clicked_id) {
+  let id = clicked_id.substr(0, 2) + '/' + clicked_id.substr(2, 2) + '/' + clicked_id.substr(4, 4);
+  currentDateDownside.innerHTML = 'Les évènements pour le ' + id;
+}
 
