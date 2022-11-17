@@ -44,6 +44,9 @@ if (isset($_POST['member'])) {
       $photo = $member->photo;
       $birth = $member->birth;
       $inscription = $member->inscription;
+
+      $birthPlaceholder = substr($birth, 6, 4) . '-' . substr($birth, 3, 2) . '-' . substr($birth, 0, 2);
+      $inscriptionPlaceholder = substr($inscription, 6, 4) . '-' . substr($inscription, 3, 2) . '-' . substr($inscription, 0, 2);
     }
   }
 } else {
@@ -67,7 +70,7 @@ if (isset($_POST['member'])) {
     </section>
 
     <section>
-      <div class="mb1em">
+      <div class="centered f11decrem mb1em">
         <?php
         $sexe = $gender == 'homme' ? '' : 'e';
         $pronom = $gender == 'homme' ? 'il' : 'elle';
@@ -86,66 +89,73 @@ if (isset($_POST['member'])) {
         <span><?= $pronom ?></span>
         <span>est inscrit<?= $sexe ?></span>
         <span>depuis le</span>
-        <span><?= $inscription ?>.</span>
+        <span class="bold"><?= $inscription ?>.</span>
       </div>
 
       <div>
-        <form action="updateMember.php" class="memberForm">
+        <form action="updateMember.php" class="memberForm mb1em">
           <div>
             <label for="username">Pseudo</label>
-            <input type="text" name="username" id="username" value="<?= $member->nom ?>">
+            <input type="text" name="username" id="username" value="<?= $my_member ?>">
           </div>
 
           <div>
             <label for="password">Mot de passe</label>
-            <input type="text" name="password" id="password" value="<?= $member->password ?>">
+            <input type="text" name="password" id="password" value="<?= $password ?>">
           </div>
 
           <div>
             <label for="adresse">Adresse</label>
-            <input type="text" name="adresse" id="adresse" value="<?= $member->adresse ?>">
+            <input type="text" name="adresse" id="adresse" value="<?= $address ?>">
           </div>
 
           <div>
             <label for="email">Mail</label>
-            <input type="email" name="email" id="email" value="<?= $member->mail ?>">
+            <input type="email" name="email" id="email" value="<?= $mail ?>">
           </div>
 
           <div>
             <label for="phone">Téléphone</label>
-            <input type="tel" name="phone" id="phone" value="<?= $member->tel ?>">
+            <input type="tel" name="phone" id="phone" value="<?= $tel ?>">
           </div>
 
           <div>
             <label for="gender">Genre</label>
-            <input type="text" name="gender" id="gender" value="<?= $member->genre ?>">
+            <select name="gender" id="gender" value="<?= $gender ?>">
+              <option value="homme">homme</option>
+              <option value="femme">femme</option>
+            </select>
           </div>
 
           <div>
             <label for="dpt">Département</label>
-            <input type="text" name="dpt" id="dpt" value="<?= $member->dpt ?>">
+            <input type="number" name="dpt" id="dpt" value="<?= $dpt ?>">
+            <!-- Faire une liste de départements -->
           </div>
 
           <div>
             <label for="city">Ville</label>
-            <input type="text" name="city" id="city" value="<?= $member->ville ?>">
+            <input type="text" name="city" id="city" value="<?= $city ?>">
+            <!-- Faire une liste de villes -->
           </div>
 
           <div>
-            <label for="pic">Photo</label>
-            <input type="file" name="pic" id="pic" value="<?= $member->photo ?>">
+            <label for="birth">Date de naissance</label>
+            <input type="date" name="birth" id="birth" value="<?= $birthPlaceholder ?>">
           </div>
 
-          <div>
-            <label for="xxxbirthxx">Date de naissance</label>
-            <input type="date" name="xxxxx" id="xxxxx" value="<?= $member->birth ?>">
-          </div>
-
-          <div>
+          <div class="mb2em">
             <label for="inscription">Date d'inscription</label>
-            <input type="date" name="inscription" id="inscription" value="<?= $member->inscription ?>">
+            <input type="date" name="inscription" id="inscription" value="<?= $inscriptionPlaceholder ?>">
           </div>
+
+          <button>Appliquer les modifications</button>
         </form>
+
+        <div class="jc-c">
+          <a href="#"><button class="btn7">Supprimer ❌</button></a>
+          <a href="#"><button class="btn7">Suspendre <?= $pause ?></button></a>
+        </div>
       </div>
     </section>
 

@@ -1583,13 +1583,15 @@ aside a:hover {
   transition: 200ms all ease;
 }
 
-.memberForm input {
+.memberForm input,
+.memberForm select {
   padding: 2px;
   width: 40%;
   text-align: center;
 }
 
-.memberForm input:focus {
+.memberForm input:focus,
+.memberForm select:focus {
   caret-color: purple;
   -webkit-transition: 100ms all ease;
   transition: 100ms all ease;
